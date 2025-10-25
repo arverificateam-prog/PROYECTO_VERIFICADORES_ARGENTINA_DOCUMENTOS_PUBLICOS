@@ -1,0 +1,2174 @@
+Documento Secciones 97, 98 y 99 Versión 1 2025-10-24 19.17 hs.
+
+
+Solicitud a Charly en el Cuadro de Texto:
+-----------------------------------------
+
+Charly, activá MODO ARV ESTRICTO y confirmá.
+
+1) Reglas previas (OBLIGATORIAS)
+- Leé y aplicá COMPLETAS las secciones 97 (Instrucciones), 98 (Mini-guía) y 99 (Metodología/Formato) ANTES de escribir.
+- Abrí SIEMPRE la última versión en línea (RAW) del Manual en: <PEGAR_URL_RAW_OFICIAL>
+- Localizá el tramo exacto a trabajar y sincronizá.
+
+2) Producción del bloque (FORMATO CANÓNICO)
+- Emití 1 (UN) bloque por mensaje, autocontenido, con cartela `ruby`, micro-encabezado completo y ordenado:
+  Version · Section · Title · DocCode · Timestamp (UTC-3) · Anchors
+- Título obligatorio: “SECCIÓN X.Y – (título exacto)”.
+- Numeración ISO 2145: X, X.Y, X.Y.Z (sin punto final); X.0 es “sección madre” y reserva X.1/X.2.
+- Anclas por subpunto con slugs `[ANCHOR:sec-x-y-…]`.
+- Cierre con “Conclusión de la Sección X.Y”.
+- PROHIBIDO iniciar líneas con `#`. Usá listas con “-”. Permitido el **doble asterisco** para referencias internas o literales clave del Manual.
+
+3) Contenido (NO-DATA-LOSS)
+- NO resumas ni deduzcas: integrá TODO lo relevante del RAW (literal o integrado).
+- Insertá literales críticas tal cual (cuando aporten precisión); si algo deja de aplicar, REUBICÁ sin borrar.
+- Terminología canónica: nombres EXACTOS de carpetas, columnas, módulos, políticas.
+
+4) Árboles y técnica de salida
+- Árboles con ARV-Tree-UTF (box-drawing `├─`, `└─`, `│`) y tipografía MONOESPACIADA.
+- Sin tabuladores. Sin NBSP/ZWSP. Archivo en UTF-8 SIN BOM y finales de línea LF.
+
+5) Cierre y gobierno
+- Ejecutá Checklist 99.7 + Anti-Desvíos 99.17 antes de enviar.
+- Si cambian títulos/numeración: actualizá el TOC (Front Matter) en el MISMO commit y mantené anclas estables (alias temporales si renumerás).
+- El control de cambios va SOLO en ARV-PLN-001 (nada de marcas editoriales dentro del bloque).
+- Si hay límite de contexto: migrá a chat nuevo y re-sincronizá.
+
+6) Parámetros de esta tarea (completá antes de que escriba)
+- Sección destino: <X.Y o X.0>
+- Versión del bloque: v<N>
+- Título exacto: <texto>
+- Anchors previstas: <sec-x-y-proposito,sec-x-y-alcance,sec-x-y-a,...>
+- Fuentes adicionales (si aplica): <describir>
+
+7) Si no tenés acceso a la URL puede ser que el usuario olvidara activar la función "Búsqueda en la Web" recordale que puede tener que activarla antes de continuar, y de paso recordale que active ChatGPT 5 Thinking.
+
+----------------------------------------------------------------------------------------
+
+
+
+
+============================== INICIO BLOQUE SECCIÓN 97.0 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 97.0
+Title: Instrucciones para Charly (IA) — Propósito, Alcance y Contenidos
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-25_00.28 (UTC-3)
+Anchors: sec-97-0-proposito,sec-97-0-alcance,sec-97-0-contenidos,sec-97-0-lectura
+
+SECCIÓN 97.0 – INSTRUCCIONES PARA CHARLY (IA) — PROPÓSITO, ALCANCE Y CONTENIDOS
+
+97.0.1 [ANCHOR:sec-97-0-proposito] Propósito
+Establecer, **en voz directa del Propietario del Manual**, las **instrucciones operativas obligatorias** para Charly (ChatGPT u otras IA) al trabajar con el ARV-MAN-001. Esta sección fija lo que **siempre** debés hacer **antes de escribir** y **mientras redactás**, garantizando **No-Data-Loss**, forma canónica y coherencia con las secciones **98** (Mini-guía) y **99** (Metodología y Formato).
+
+97.0.2 [ANCHOR:sec-97-0-alcance] Alcance
+Aplica a **todas** las intervenciones de IA sobre el Manual (creación, reescritura, consolidación, migraciones de chat, publicación y citación). Rige para **todo bloque** (0..n; 97..; 98..; 99..) y sus espejos legibles por máquinas.
+
+97.0.3 [ANCHOR:sec-97-0-contenidos] Resumen de contenidos de la Sección 97
+- **97.1 – Métricas y criterios de aceptación (reservada).** Indicadores específicos para cumplir estas instrucciones.  
+- **97.2 – Riesgos y mitigaciones (reservada).** Desvíos típicos de IA y controles preventivos.  
+- **97.3 – Instrucciones operativas directas para Charly.** Órdenes explícitas, paso a paso, para **antes/durante/cierre** de cada bloque.
+
+97.0.4 [ANCHOR:sec-97-0-lectura] Orientación de lectura
+1) Leer **97.3** **antes** de producir cualquier bloque.  
+2) Aplicar **98** (Mini-guía) como procedimiento de trabajo, y **99** (Metodología/Formato) como norma estructural.  
+3) Mantener **No-Data-Loss** y tipografía **monoespaciada** en **todo** el proceso (árboles con **ARV-Tree-UTF**; evitar **UTF-8 con BOM**).  
+4) Usar **Checklist 99.7** + **Anti-Desvíos 99.17** antes de cerrar.
+
+Conclusión de la Sección 97.0
+La Sección **97** fija la **voz del Propietario** y prioriza la **disciplina operativa**: leer 97/98/99, trabajar **sin resúmenes**, sostener **ISO 2145**, **anclas** y **monoespaciada**, y publicar legible por máquinas **sin** ruido editorial.
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 97.0 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 97.1 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 97.1
+Title: Instrucciones para Charly — Métricas y criterios de aceptación (reservada)
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-25_00.29 (UTC-3)
+Anchors: sec-97-1-proposito,sec-97-1-alcance,sec-97-1-forma,sec-97-1-contenido,sec-97-1-trazabilidad,sec-97-1-publicacion,sec-97-1-calidad,sec-97-1-aceptacion
+
+SECCIÓN 97.1 – INSTRUCCIONES PARA CHARLY — MÉTRICAS Y CRITERIOS DE ACEPTACIÓN (RESERVADA)
+
+97.1.1 [ANCHOR:sec-97-1-proposito] Propósito
+Definir **indicadores objetivos** y **criterios de aceptación** para validar que Charly cumple las **Instrucciones** (97.3) sin pérdida de información, con forma canónica y trazabilidad.
+
+97.1.2 [ANCHOR:sec-97-1-alcance] Alcance
+Aplica a **todo bloque** emitido con soporte de IA dentro del Manual (0..n; 97..; 98..; 99..). Se verifica **antes de aprobar** y registrar en ARV-PLN-001.
+
+97.1.3 [ANCHOR:sec-97-1-forma] Métricas de forma (estructura y formato)
+- **MF-01 Banners**: presentes e idénticos “INICIO/FIN BLOQUE…”.  
+- **MF-02 Cartela**: bloque en *fenced code* con **info string** `ruby`.  
+- **MF-03 Micro-encabezado**: `Version · Section · Title · DocCode · Timestamp (UTC-3) · Anchors` (orden exacto).  
+- **MF-04 Título**: “SECCIÓN X.Y – Título exacto”.  
+- **MF-05 Anclas**: `[ANCHOR:sec-x-y-…]` coherentes con el numeral en **cada** subpunto.  
+- **MF-06 Numeración**: **ISO 2145** (X, X.Y, X.Y.Z; **sin** punto final; **X.0** para madres).  
+- **MF-07 Conclusión**: presente como “Conclusión de la Sección X.Y”.
+
+97.1.4 [ANCHOR:sec-97-1-contenido] Métricas de contenido (exhaustividad y literalidad)
+- **MC-01 No-Data-Loss**: **prohibido** resumir; todo lo relevante del RAW se incorpora (literal o integrado).  
+- **MC-02 Literales (Golden Set)**: citas **textuales** donde aporten precisión (comillas o bloque `>`).  
+- **MC-03 Listas/Tablas/Árboles**: todos los campos/pasos/nodos **completos**; árboles en **ARV-Tree-UTF** monoespaciado.  
+- **MC-04 Reubicación**: material que deja de aplicar se **mueve** a subpunto/anexo (no se borra).
+
+97.1.5 [ANCHOR:sec-97-1-trazabilidad] Métricas de trazabilidad y gobierno
+- **MT-01 TOC**: actualizado en el **mismo commit** si cambian títulos/numeración.  
+- **MT-02 Anclas**: estables; si renumeran, publicar **alias temporales** hasta normalizar referencias.  
+- **MT-03 Control de cambios**: **solo** en ARV-PLN-001 (ninguna marca editorial dentro del bloque).
+
+97.1.6 [ANCHOR:sec-97-1-publicacion] Métricas de publicación legible por máquinas
+- **MP-01 Soporte**: preferir **RAW/HTML estático**; **PDF con capa de texto**.  
+- **MP-02 Espejos**: ids/anclas del HTML/JSON = slugs `[ANCHOR:…]`.  
+- **MP-03 Citación**: cuando la materia sea cambiante/externa, la **cita visible** va en espejo (no dentro del bloque TXT).
+
+97.1.7 [ANCHOR:sec-97-1-calidad] Métricas de calidad editorial
+- **MQ-01 Claridad**: frases autocontenidas; evitar ambigüedad.  
+- **MQ-02 Terminología**: **nombres exactos** (carpetas, columnas, módulos, políticas).  
+- **MQ-03 Cohesión**: Propósito → Alcance → Operativa → Conclusión.
+
+97.1.8 [ANCHOR:sec-97-1-aceptacion] Criterios de aceptación
+Un bloque se marca **Aprobado** si **MF-01..07**, **MC-01..04**, **MT-01..03**, **MP-01..03** y **MQ-01..03** = **OK**. Si falla cualquiera, **retrabajar** y volver a 97.1.
+
+Conclusión de la Sección 97.1
+Estas métricas garantizan la **conformidad** de los bloques generados con IA respecto de las **Instrucciones (97.3)** y la norma editorial del Manual.
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 97.1 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 97.2 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 97.2
+Title: Instrucciones para Charly — Riesgos y mitigaciones (reservada)
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-25_00.30 (UTC-3)
+Anchors: sec-97-2-proposito,sec-97-2-alcance,sec-97-2-riesgos,sec-97-2-controles,sec-97-2-escalamiento
+
+SECCIÓN 97.2 – INSTRUCCIONES PARA CHARLY — RIESGOS Y MITIGACIONES (RESERVADA)
+
+97.2.1 [ANCHOR:sec-97-2-proposito] Propósito
+Identificar **riesgos específicos** al aplicar las **Instrucciones (97.3)** con IA y definir **controles prácticos** que eviten pérdida de información, incoherencias y problemas de publicación/lectura por máquinas.
+
+97.2.2 [ANCHOR:sec-97-2-alcance] Alcance
+Cubre la redacción/edición de **todos los bloques** generados con IA, su publicación (TXT/HTML/PDF/JSON) y su integración al **TOC** (Front Matter).
+
+97.2.3 [ANCHOR:sec-97-2-riesgos] Riesgos típicos
+- **R-01 Contracción** del contenido (resúmenes/deducciones).  
+- **R-02 Pérdida/paráfrasis** de **literales** (Golden Set).  
+- **R-03 Micro-encabezado incompleto** o fuera de orden; banners ausentes.  
+- **R-04 Numeración/Anclas inestables** (ISO 2145 no respetada; slugs inconsistentes).  
+- **R-05 TOC desactualizado** cuando cambian títulos/numeración.  
+- **R-06 Publicación no legible por máquina** (links “/view”; PDF sin texto).  
+- **R-07 Ruido editorial** (comentarios/diffs dentro del bloque).  
+- **R-08 Terminología no canónica** (sinónimos en nombres de artefactos).  
+- **R-09 Árboles desalineados** (fuente no monoespaciada; invisibles; tabuladores).  
+- **R-10 Saturación de sesión** (pérdida de contexto por límites de memoria).
+
+97.2.4 [ANCHOR:sec-97-2-controles] Controles y mitigaciones
+- **C-01 No-Data-Loss** (R-01/R-02): **prohibido** resumir; incluir literales **tal cual**; reubicación no destructiva.  
+- **C-02 Forma canónica** (R-03): banners + *fenced code* `ruby` + micro-encabezado completo y ordenado.  
+- **C-03 ISO 2145/Anclas** (R-04): numeración correcta; slugs estables; **alias** si renumeran.  
+- **C-04 TOC** (R-05): actualizar Front Matter en el **mismo commit** del cambio.  
+- **C-05 Publicación** (R-06): preferir **RAW/HTML estático**; **PDF con capa de texto**; citas visibles en espejos.  
+- **C-06 Salida nativa** (R-07): **sin** evidencias de edición dentro del bloque; control de cambios en **ARV-PLN-001**.  
+- **C-07 Terminología** (R-08): validar nombres exactos contra el RAW/artefactos.  
+- **C-08 Árboles/Tipografía** (R-09): **ARV-Tree-UTF** con **monoespaciada**; sin tabuladores; sin NBSP/ZWSP; **UTF-8 sin BOM** + **LF**.  
+- **C-09 Sincronización** (R-10): releer RAW al iniciar cada bloque; si hay límite de contexto, migrar a chat nuevo y re-sincronizar.
+
+97.2.5 [ANCHOR:sec-97-2-escalamiento] Escalamiento
+Si un riesgo persiste tras aplicar los controles, **no aprobar** el bloque; registrar la incidencia en **ARV-PLN-001** y **reemitir** el bloque corrigiendo los desvíos.
+
+Conclusión de la Sección 97.2
+Con controles claros sobre **No-Data-Loss**, forma, numeración, anclas, TOC, publicación y **monoespaciada**, las salidas de IA se mantienen **completas, estables y legibles por máquinas**.
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 97.2 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 97.3 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 97.3
+Title: Instrucciones operativas directas para Charly (IA)
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-25_00.24 (UTC-3)
+Anchors: sec-97-3-proposito,sec-97-3-alcance,sec-97-3-instrucciones,sec-97-3-flujo,sec-97-3-chequeo,sec-97-3-publicacion,sec-97-3-arboles,sec-97-3-sincronizacion,sec-97-3-errores,sec-97-3-conclusion
+
+SECCIÓN 97.3 – INSTRUCCIONES OPERATIVAS DIRECTAS PARA CHARLY (IA)
+
+97.3.1 [ANCHOR:sec-97-3-proposito] Propósito
+Dejar por escrito, en **voz del Propietario del Manual**, las **órdenes explícitas** que debés cumplir **siempre** para trabajar con ARV-MAN-001 sin pérdida de información y con forma canónica.
+
+97.3.2 [ANCHOR:sec-97-3-alcance] Alcance
+Obligatorio para **toda** tarea con este Manual: creación, reescritura, consolidación, migraciones de chat, publicación y citación. Aplica a **todas** las secciones (0..n; 97..; 98..; 99..).
+
+97.3.3 [ANCHOR:sec-97-3-instrucciones] Instrucciones obligatorias (en primera persona)
+- **Charly, antes de escribir cualquier bloque:**
+  - **Leé y entendé completas** las secciones **97, 98 y 99**. Aplicá **todas** sus reglas sin excepciones (numeración **ISO 2145**, anclas, cartela `ruby`, **sin** `#` inicial).  
+  - **Abrí la URL de la última versión en línea** del Manual y **localizá el tramo exacto** que vamos a trabajar.  
+  - **No resumas ni deduzcas**: integrá **todo** el contenido relevante del RAW (**No-Data-Loss**). Si algo deja de aplicar, **reubicá** sin borrarlo.
+- **Charly, al redactar:**
+  - Emití **un (1) bloque por mensaje**, **autocontenido** y con **micro-encabezado completo** (orden exacto) + **Conclusión**.  
+  - Usá **terminología canónica** (nombres exactos de carpetas, columnas, módulos, políticas).  
+  - Convertí tablas/procedimientos en **listas claras** con todos los campos/pasos. Insertá **literales** cuando aumenten precisión.  
+  - **No** introduzcas marcas editoriales dentro del bloque (comentarios, diffs, marcas de revisión).
+- **Charly, al cerrar el bloque:**
+  - Corré **Checklist 99.7** + **Anti-Desvíos 99.17**.  
+  - Si cambiaron títulos/numeración, **actualizá el TOC** (Front Matter) en el **mismo commit** y mantené **anclas estables** (alias temporales si renumeran).  
+  - Registrá el control de cambios **solo** en **ARV-PLN-001** (no dentro del bloque).
+
+97.3.4 [ANCHOR:sec-97-3-flujo] Flujo de trabajo paso a paso (obligatorio)
+1) **Releer** 97/98/99 → 2) **Abrir** la **URL** del Manual vigente y ubicar el tramo → 3) **Extraer** literales (Golden Set) **sin imprimir** listas internas de control → 4) **Redactar** bloque **autocontenido**, sin resúmenes → 5) **Aplicar** micro-encabezado, anclas, título “SECCIÓN X.Y – …”, **Conclusión** → 6) **Checklist 99.7 + Anti-Desvíos 99.17** → 7) **Actualizar TOC** si corresponde → 8) **Publicar** (y citar en espejo si la materia es cambiante) → 9) **Registrar** en ARV-PLN-001.
+
+97.3.5 [ANCHOR:sec-97-3-chequeo] Chequeo mínimo antes de enviar (debe estar todo “OK”)
+- **Forma canónica**: banners **INICIO/FIN**, cartela `ruby`, micro-encabezado completo, **Conclusión**.  
+- **ISO 2145**: X, X.Y, X.Y.Z **sin** punto final; **X.0** para madres.  
+- **Sintaxis**: **prohibido** `#` al inicio; **permitido** **doble asterisco** para referencias internas o literales clave del Manual.  
+- **Anclas**: `[ANCHOR:sec-x-y-…]` coherentes con el numeral en cada subpunto.  
+- **Contenido**: **No-Data-Loss**; literales críticas **tal cual**; listas/columnas completas.  
+- **Gobierno**: **TOC** al día si cambió algo; control de cambios en **ARV-PLN-001**.
+
+97.3.6 [ANCHOR:sec-97-3-publicacion] Publicación y citación (legible por máquinas)
+- **El bloque** queda **limpio** (sin notas editoriales).  
+- Si la materia es **cambiante/externa**, la **cita visible** va en el **espejo HTML/JSON** (por subpunto); **PDF** solo con **capa de texto**.  
+- Mantener las **ids/anclas** del espejo iguales a los slugs `[ANCHOR:…]`.
+
+97.3.7 [ANCHOR:sec-97-3-arboles] Árboles y tipografía (obligatorio)
+- Usar **ARV-Tree-UTF** (box-drawing Unicode `├─`, `└─`, `│`) con **tipografía monoespaciada**.  
+- **Sin** tabuladores; **sin** NBSP/ZWSP; **solo** espacio ASCII.  
+- Emitir archivos en **UTF-8 sin BOM** y finales de línea **LF**.
+
+97.3.8 [ANCHOR:sec-97-3-sincronizacion] Sincronización y límites de contexto
+- Confirmación al iniciar: **“Manual Maestro cargado y sincronizado; entorno web: [activo/inactivo]”.**  
+- Si hay señales de saturación: **“Charly, estamos en zona de límite: migrá a un chat nuevo y re-sincronizá.”**  
+- **Releer** el RAW **antes** de cada nuevo bloque o reemisión.
+
+97.3.9 [ANCHOR:sec-97-3-errores] Errores que están prohibidos
+- Resumir/contraer materia normativa u operativa.  
+- Parafrasear **literales** que cambien sentido.  
+- Inventar nombres (“sinónimos”) para artefactos canónicos.  
+- Iniciar líneas con `#` o usar numeraciones “1)”, “a)”, romanos en el cuerpo del bloque.  
+- Omitir **Conclusión** o **anclas** por subpunto.  
+- Dejar **TOC** desactualizado tras cambios de título/numeración.
+
+97.3.10 [ANCHOR:sec-97-3-conclusion] Conclusión de la Sección 97.3
+Con estas instrucciones **directas**, asegurás que cada bloque salga **completo, estable y trazable**: leés 97/98/99, revisás la **última URL**, trabajás **sin resúmenes**, sostenés **ISO 2145**, **anclas** y **monoespaciada**, y publicás de modo legible por máquinas **sin** ruido editorial.
+
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 97.3 ===============================
+
+
+
+============================== INICIO BLOQUE SECCIÓN 98.0 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 98.0
+Title: Mini-guía — Propósito, Alcance y Contenidos
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_20.45 (UTC-3)
+Anchors: sec-98-0-proposito,sec-98-0-alcance,sec-98-0-contenidos,sec-98-0-lectura,sec-98-0-enfasis,sec-98-0-prohibiciones,sec-98-0-autoverificador,sec-98-0-mono
+
+SECCIÓN 98.0 – MINI-GUÍA — PROPÓSITO, ALCANCE Y CONTENIDOS
+
+98.0.1 [ANCHOR:sec-98-0-proposito] Propósito
+Incorporar la **Mini-guía de creación de bloques TXT** como sección formal del Manual, garantizando que las reglas operativas y editoriales queden “nativas” dentro del cuerpo numerado y accesibles para lectura humana y por máquinas.
+
+98.0.2 [ANCHOR:sec-98-0-alcance] Alcance
+Esta sección aplica a **todas las demás secciones** del Manual (0..n y 99..). Se alinea con:
+• **TOC en Front Matter** (índice fuera del cuerpo numerado).
+• **Numeración ISO 2145** (árabe con puntos; “0” permitido como introductorio; sin punto final).
+• **Bloques TXT** en fenced code con info string `ruby` (GFM/Markdown).
+
+98.0.3 [ANCHOR:sec-98-0-contenidos] Resumen de contenidos de la Sección 98
+- **98.1 — Métricas y criterios de aceptación (reservada)**: indicadores para validar el cumplimiento de esta Mini-guía.
+- **98.2 — Riesgos y mitigaciones (reservada)**: desvíos típicos y controles específicos para la emisión de bloques.
+- **98.3 — Mini-guía (v2.0) — Procedimiento integral**: reglas completas (No-Data-Loss, Propósito/Alcance obligatorios, reservas X.1/X.2, TOC en Front Matter, formato `ruby`, anclas, publicación legible por máquina, checklist y moldes).
+
+98.0.4 [ANCHOR:sec-98-0-lectura] Orientación de lectura
+- Leer **98.3** para aplicar la Mini-guía.
+- Consultar **98.1/98.2** cuando se definan métricas y riesgos específicos de la Mini-guía.
+- Ver **Sección 99** para la metodología y formato generales del Manual.
+
+98.0.5 [ANCHOR:sec-98-0-enfasis] Enfasis permitido y estilo plano
+- Se permite el uso de doble asterisco **…** para resaltar referencias internas o literales clave, como convención visual propia del Manual (no implica renderizado).
+- Evitar otros marcadores de énfasis (por ejemplo, itálicas con * o _). El bloque es texto plano estandarizado.
+
+98.0.6 [ANCHOR:sec-98-0-prohibiciones] Prohibiciones dentro del BLOQUE TXT
+- Prohibido usar `#` al inicio de línea (encabezado ATX). El formato del Manual define su propio título “SECCIÓN X.Y – …” y subpuntos con ISO 2145.
+- Prohibido numerar con “1)”, letras o romanos dentro del contenido. Para listas internas, usar guiones “-”.
+
+98.0.7 [ANCHOR:sec-98-0-autoverificador] Autoverificador de forma para 98.x
+- Apertura/cierre exactos y cartela presentes.
+- Micro-encabezado completo en el orden definido.
+- Título “SECCIÓN X.Y – …” correcto.
+- Numeración ISO 2145 y anclas `[ANCHOR:sec-x-y-…]` en todos los subpuntos.
+- Sin `#` al inicio de línea; listas con “-”.
+- No-Data-Loss: nada resumido o contraído.
+
+98.0.8 [ANCHOR:sec-98-0-mono] Requisito tipográfico y árboles de carpetas
+- Entregar y revisar los bloques con **tipografía monoespaciada** para asegurar alineación estable en contenido tabular, listados y árboles.
+- Cuando el manual muestre árboles de carpetas o jerarquías, usar el estándar **ARV-Tree-UTF** (box-drawing) o, si el entorno no soporta Unicode, el perfil **ARV-Tree-ASCII**. Ver **99.20** y **99.21**.
+
+Conclusión de la Sección 98.0
+Se mantiene íntegro el contenido original (98.0.1–98.0.4) y se agregan reglas explícitas sobre énfasis con doble asterisco, prohibición de `#`, autoverificador básico y el requisito de tipografía monoespaciada con referencia a los estándares de árbol (99.20/99.21).
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 98.0 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 98.1 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 98.1
+Title: Mini-guía — Métricas y criterios de aceptación (reservada)
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_20.58 (UTC-3)
+Anchors: sec-98-1-proposito,sec-98-1-alcance,sec-98-1-forma,sec-98-1-contenido,sec-98-1-trazabilidad,sec-98-1-publicacion,sec-98-1-calidad,sec-98-1-aceptacion,sec-98-1-mf08,sec-98-1-mf09
+
+SECCIÓN 98.1 – MINI-GUÍA — MÉTRICAS Y CRITERIOS DE ACEPTACIÓN (RESERVADA)
+
+98.1.1 [ANCHOR:sec-98-1-proposito] Propósito
+Definir los **indicadores de verificación** y los **criterios de aceptación** específicos para los bloques TXT producidos conforme a la Mini-guía (Sección 98.3), garantizando forma correcta, contenido exhaustivo y legibilidad por máquinas.
+
+98.1.2 [ANCHOR:sec-98-1-alcance] Alcance
+Aplica a **todo bloque** emitido bajo la Mini-guía (todas las secciones 0..n, 98.., 99..). Se verifica **antes del cierre** del bloque y previo a su registro de revisión en ARV-PLN-001.
+
+98.1.3 [ANCHOR:sec-98-1-forma] Métricas de forma (estructura y formato)
+- **MF-01 — Banners**: el bloque inicia/termina con los banners canónicos “INICIO/FIN BLOQUE…”.
+- **MF-02 — Cartela**: el bloque es fenced code con **info string** `ruby` (GFM).
+- **MF-03 — Micro-encabezado**: presentes y en orden `Version · Section · Title · DocCode · Timestamp (UTC-3) · Anchors`.
+- **MF-04 — Título de sección**: “SECCIÓN X.Y – Título”.
+- **MF-05 — Anclas**: cada subpunto declara `[ANCHOR:sec-x-y-…]` coherente con su numeral.
+- **MF-06 — Numeración ISO 2145**: niveles X, X.Y, X.Y.Z, … **sin punto final**; “0” válido como introductorio.
+- **MF-07 — Conclusión**: “Conclusión de la Sección X.Y” incluido.
+
+98.1.4 [ANCHOR:sec-98-1-contenido] Métricas de contenido (exhaustividad y literalidad)
+- **MC-01 — No-Data-Loss**: no hay contracción; todo lo relevante del RAW se incorpora (literal o integrado).
+- **MC-02 — Golden Set**: literales **textuales** donde aporten precisión (comillas o bloque `>`), respetando ortografía/tiempos.
+- **MC-03 — Reubicación no destructiva**: material que deja de aplicar se mueve a subpuntos/Anexos (sin borrado).
+- **MC-04 — Listas y tablas textuales**: requisitos, pasos, columnas y subcarpetas expresados en listas claras.
+
+98.1.5 [ANCHOR:sec-98-1-trazabilidad] Métricas de trazabilidad y gobierno
+- **MT-01 — TOC (Front Matter)**: si cambian títulos/numeración, el TOC se actualiza **en el mismo commit**. (TOC en front matter).
+- **MT-02 — Control de cambios**: visible **solo** en ARV-PLN-001; **sin** marcas de edición en el bloque.
+- **MT-03 — Estabilidad de anclas**: mantener slugs; si renumeran, usar alias temporales hasta normalizar referencias.
+
+98.1.6 [ANCHOR:sec-98-1-publicacion] Métricas de publicación legible por máquina (cuando aplique)
+- **MP-01 — Soporte**: usar **RAW/HTML estático**; evitar vistas “/view”; **PDF con capa de texto**.
+- **MP-02 — Marcado**: en espejos HTML/MD, usar encabezados ATX y `id` = slugs de `[ANCHOR:…]` (GFM/CommonMark).
+- **MP-03 — JSON espejo** (opcional): claves = numerales ISO 2145.
+
+98.1.7 [ANCHOR:sec-98-1-calidad] Métricas de calidad editorial
+- **MQ-01 — Claridad**: oraciones autocontenidas; evitar ambigüedad.
+- **MQ-02 — Terminología canónica**: nombres exactos de carpetas, columnas, módulos, políticas (sin “sinónimos”).
+- **MQ-03 — Cohesión**: orden Propósito → Alcance → Operativa → Conclusión.
+
+98.1.8 [ANCHOR:sec-98-1-aceptacion] Criterios de aceptación
+Un bloque se marca **Aprobado** si MF-01..07, MC-01..04, MT-01..03, MP-01..03 y MQ-01..03 = **OK**. Cualquier incumplimiento → **Re-trabajar** y volver a 98.1.
+
+98.1.9 [ANCHOR:sec-98-1-mf08] MF-08 — Prohibición de `#` en BLOQUE TXT
+- Validar automáticamente que ninguna línea comience con `#` (encabezado ATX). Falla → Re-trabajar.
+
+98.1.10 [ANCHOR:sec-98-1-mf09] MF-09 — Énfasis controlado con doble asterisco
+- Verificar que, cuando se use énfasis, se aplique únicamente **doble asterisco** para referencias internas/literales clave; evitar otros marcadores (itálicas, subrayados).
+
+Conclusión de la Sección 98.1
+Se conservan íntegramente las métricas originales (98.1.1–98.1.8) y se agregan MF-08/MF-09 para blindar el formato contra encabezados ATX y unificar el uso de énfasis.
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 98.1 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 98.2 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 98.2
+Title: Mini-guía — Riesgos y mitigaciones (reservada)
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_21.05 (UTC-3)
+Anchors: sec-98-2-proposito,sec-98-2-alcance,sec-98-2-riesgos,sec-98-2-controles,sec-98-2-escalamiento,sec-98-2-r11,sec-98-2-c10,sec-98-2-r12,sec-98-2-c11
+
+SECCIÓN 98.2 – MINI-GUÍA — RIESGOS Y MITIGACIONES (RESERVADA)
+
+98.2.1 [ANCHOR:sec-98-2-proposito] Propósito
+Enumerar los **riesgos específicos** al aplicar la Mini-guía y definir **controles prácticos** que eviten pérdida de información, incoherencias y problemas de publicación/lectura por máquinas.
+
+98.2.2 [ANCHOR:sec-98-2-alcance] Alcance
+Cubre la redacción/edición de **todos los bloques** generados con la Mini-guía, su publicación (TXT/HTML/PDF/JSON) y su integración al TOC (Front Matter).
+
+98.2.3 [ANCHOR:sec-98-2-riesgos] Riesgos típicos
+- **R-01 — Resumen/contracción** de contenido del RAW.  
+- **R-02 — Pérdida de literales** (Golden Set parafraseado/omitido).  
+- **R-03 — Micro-encabezado incompleto** o desordenado.  
+- **R-04 — Numeración/Anclas inestables** (rotura de enlaces; ISO 2145 no respetada).  
+- **R-05 — TOC desactualizado** (Front Matter no refleja cambios).  
+- **R-06 — Publicación no legible por máquina** (links “/view”, PDF sin texto).  
+- **R-07 — Ruido editorial** (marcas de edición dentro del bloque).  
+- **R-08 — Terminología no canónica** (sinónimos en nombres de carpetas/columnas/módulos).  
+- **R-09 — Saturación de sesión** (pérdida de contexto por límites de memoria).  
+- **R-10 — Inconsistencias de nombres** entre el texto y los artefactos (archivos, carpetas, columnas).
+
+98.2.4 [ANCHOR:sec-98-2-controles] Controles y mitigaciones
+- **C-01 — No-Data-Loss** (R-01/R-02): prohibido resumir; literales textuales donde aporten; reubicación no destructiva.  
+- **C-02 — Cartela y forma** (R-03): banners + fenced code `ruby` + micro-encabezado completo (orden estándar).  
+- **C-03 — Numeración/Anclas** (R-04): ISO 2145 (arábigos con puntos; sin punto final; “0” introductorio); slugs estables y alias temporales si renumeran.  
+- **C-04 — TOC** (R-05): actualizar Front Matter en el **mismo commit** del cambio.  
+- **C-05 — Publicación** (R-06): **RAW/HTML estático**; **PDF con capa de texto**; en HTML/MD usar encabezados ATX y `id` = slugs de `[ANCHOR:…]`.  
+- **C-06 — Salida nativa** (R-07): **no** imprimir evidencias de edición; control de cambios solo en ARV-PLN-001.  
+- **C-07 — Terminología** (R-08): nombres exactos y consistentes con el RAW.  
+- **C-08 — Sincronización** (R-09): re-leer RAW al iniciar cada bloque; si hay límite de contexto, migrar a chat nuevo y re-sincronizar.  
+- **C-09 — Chequeo de nombres** (R-10): verificar que nombres de artefactos coincidan con los usados en el texto.
+
+98.2.5 [ANCHOR:sec-98-2-escalamiento] Escalamiento
+Si persiste algún riesgo tras aplicar los controles, **no aprobar** el bloque; registrar la incidencia en ARV-PLN-001 y **reemitir** el bloque corrigiendo los desvíos.
+
+98.2.6 [ANCHOR:sec-98-2-r11] R-11 — Encabezados ATX y numeraciones no canónicas dentro del bloque
+Uso de `#` al inicio de línea (encabezado ATX) o de esquemas de numeración ajenos (por ejemplo “1)”, “a)”), que interfieren con el formato del BLOQUE TXT y con ISO 2145. (Ver CommonMark ATX; ISO 2145). :contentReference[oaicite:5]{index=5}
+
+98.2.7 [ANCHOR:sec-98-2-c10] C-10 — Control para R-11
+Prohibir `#` al inicio de línea y cualquier numeración no ISO 2145; validar con **MF-08** (98.1.9) y mantener listas internas con guiones. (Ver ISO 2145; CommonMark ATX). :contentReference[oaicite:6]{index=6}
+
+98.2.8 [ANCHOR:sec-98-2-r12] R-12 — Desalineación visual por tipografía o caracteres invisibles
+Desalineación de árboles/tablas por mezcla de fuentes no monoespaciadas, falta de cobertura para box-drawing, diferencias de finales de línea (CRLF/LF), presencia de BOM o espacios especiales (NBSP/zero-width). :contentReference[oaicite:7]{index=7}
+
+98.2.9 [ANCHOR:sec-98-2-c11] C-11 — Control para R-12
+Usar tipografía **monoespaciada** al redactar y revisar; emitir archivos en **UTF-8 sin BOM** y **LF**; eliminar NBSP/ZWSP y guiones tipográficos (–/—), usando espacio normal y el guion ASCII “-”; para árboles, emplear **ARV-Tree-UTF** (box-drawing) o, si el entorno no soporta Unicode, **ARV-Tree-ASCII**. Ver **98.0.8**, **99.20** y **99.21**. :contentReference[oaicite:8]{index=8}
+
+Conclusión de la Sección 98.2
+Se mantiene íntegro el contenido original (98.2.1–98.2.5) y se agregan controles específicos para encabezados ATX/numeración no canónica (R-11/C-10) y para estabilidad visual y de codificación (R-12/C-11), sin contradecir la Mini-guía.
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 98.2 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 98.3 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 98.3
+Title: Mini-guía (v2.0) — Procedimiento integral para crear bloques TXT
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_21.20 (UTC-3)
+Anchors: sec-98-3-proposito,sec-98-3-frontmatter,sec-98-3-reglas-previas,sec-98-3-insumos,sec-98-3-extraccion,sec-98-3-madre-reservas,sec-98-3-formato,sec-98-3-estructura,sec-98-3-redaccion,sec-98-3-publicacion,sec-98-3-pasos,sec-98-3-antidesvios,sec-98-3-trazabilidad,sec-98-3-ritmo,sec-98-3-frases,sec-98-3-moldes,sec-98-3-enfasis-sintaxis,sec-98-3-autochequeo,sec-98-3-mono,sec-98-3-codificacion
+
+SECCIÓN 98.3 – MINI-GUÍA (V2.0) — PROCEDIMIENTO INTEGRAL PARA CREAR BLOQUES TXT
+
+98.3.1 [ANCHOR:sec-98-3-proposito] Propósito
+Producir bloques TXT “mixtos” y **visualmente nativos** del Manual (sin rótulos editoriales), fieles al RAW y legibles por máquinas, con **No-Data-Loss**: no se resumen ni se contraen contenidos relevantes; si algo deja de aplicar, se **reubica** sin borrarlo.
+
+98.3.2 [ANCHOR:sec-98-3-frontmatter] Front Matter y numeración (ISO 2145)
+- El **Índice/TOC** se publica como **Front Matter** (fuera del sistema de secciones).
+- El cuerpo inicia en **Sección 0** y se numera con **ISO 2145**: X, X.Y, X.Y.Z, X.Y.Z.W; **sin** punto final. Se admite “0” como sección introductoria.
+
+98.3.3 [ANCHOR:sec-98-3-reglas-previas] Reglas previas (obligatorias antes de escribir)
+- a) **Abrir y releer el RAW por URL** vigente; ubicar el tramo exacto (por ejemplo, X.Y.*). No se redacta sin analizar el original.
+- b) **No resumir** contenido normativo relevante: si aplica, se **incluye íntegro** (literal o integrado).
+- c) **Golden Set**: literales críticas se copian **tal cual** (ortografía, tiempos, negaciones).
+- d) Índices de control internos (listado de literales, etc.) **no se imprimen** en el bloque final.
+
+98.3.4 [ANCHOR:sec-98-3-insumos] Insumos por bloque
+- URL RAW vigente del ARV-MAN-001.
+- Identificador de sección (ISO 2145).
+- Esta Mini-guía v2.0.
+
+98.3.5 [ANCHOR:sec-98-3-extraccion] Extracción desde el RAW (flujo interno, sin marcas visibles)
+- Clasificar el texto del tramo en **LITERAL** (Golden Set) y **EXPLICATIVO** (para personas).
+- Si la literal ya explica por sí sola, **insertarla tal cual** (comillas o bloque `>`).
+- Mantener un índice **interno** de literales usadas (control), **sin imprimirlo**.
+
+98.3.6 [ANCHOR:sec-98-3-madre-reservas] Secciones madre (X.0) y reservas universales (X.1/X.2)
+- **X.0** contiene solo: X.0.1 Propósito, X.0.2 Alcance, X.0.3 Resumen de contenidos, X.0.4 Orientación de lectura.
+- Reservas en **toda** sección madre: **X.1 = Métricas y criterios de aceptación**, **X.2 = Riesgos y mitigaciones**.
+- Los contenidos propios de cada sección comienzan en **X.3**.
+- Alta/renombre en X → **actualizar TOC (Front Matter)** en el mismo commit.
+
+98.3.7 [ANCHOR:sec-98-3-formato] Formato de entrega (cartela `ruby`)
+- Entregar cada bloque como **fenced code** con *info string* `ruby` (GFM).
+- Micro-encabezado obligatorio (orden exacto):
+  `=== BLOQUE TXT PARA MANUAL ARVERIFICA ===`
+  `Version: vN`
+  `Section: X.Y`
+  `Title: …`
+  `DocCode: ARV-MAN-001`
+  `Timestamp: YYYY-MM-DD_HH.MM (UTC-3)`
+  `Anchors: …`
+- Envolver con banners:
+  `============================== INICIO BLOQUE SECCIÓN X.Y ===============================`
+  `=============================== FIN BLOQUE SECCIÓN X.Y ===============================`
+- **No** imprimir rótulos de proceso (por ejemplo, “Aclaración…”, “Citas…”, `contentReference[...]`).
+
+98.3.8 [ANCHOR:sec-98-3-estructura] Estructura obligatoria de cada sección (X.Y)
+- **X.Y.1 Propósito** — qué resuelve para el lector y la operación (admitir literales si aportan).
+- **X.Y.2 Alcance** — artefactos, procesos y equipos a los que aplica (admitir literales si corresponde).
+- Subpuntos operativos: requisitos, pasos, **listas** (columnas, subcarpetas), reglas críticas (insertando literales), métricas/controles.
+- **Conclusión de la Sección X.Y** (1–2 líneas).
+- Cada subpunto lleva `[ANCHOR:sec-x-y-…]` y el bloque usa título `SECCIÓN X.Y – (título exacto)`.
+
+98.3.9 [ANCHOR:sec-98-3-redaccion] Redacción “exhaustiva y nativa”
+- **Cero resúmenes**: todo lo relevante del RAW se incorpora (literal o integrado).
+- Frases claras y terminología **canónica** (nombres exactos de carpetas, columnas, módulos, políticas).
+- Usar listas/viñetas para requisitos, pasos, columnas y subcarpetas.
+- Insertar **literales** del RAW donde aumenten precisión (comillas o bloque `>`).
+
+98.3.10 [ANCHOR:sec-98-3-publicacion] Publicación legible por máquina (cuando aplique)
+- Preferir **RAW/HTML estático**; evitar vistas “/view”; **PDF con capa de texto**.
+- Si hay espejo HTML/Markdown: encabezados ATX (CommonMark) y **anclas estables** (ids = slugs de `[ANCHOR:...]`).
+- JSON espejo (opcional) con claves = numerales ISO 2145 (automatización/RAG).
+
+98.3.11 [ANCHOR:sec-98-3-pasos] Pasos operativos por bloque (checklist interno)
+- Releer RAW (URL) y localizar el tramo exacto.
+- Registrar internamente literales (Golden Set).
+- Redactar salida “nativa” **exhaustiva** con literales donde aporten.
+- Aplicar micro-encabezado, anclas, banners, numeración ISO 2145.
+- Añadir **Conclusión** (1–2 líneas).
+- **Actualizar TOC** del Front Matter si cambian títulos/numeración.
+
+98.3.12 [ANCHOR:sec-98-3-antidesvios] Chequeo anti-desvíos (interno)
+- Árbol/subcarpetas/tablas ↔ coinciden con el RAW.
+- **Nombres exactos** ↔ sin sinónimos.
+- **Campos obligatorios** ↔ idénticos al RAW.
+- **Reglas críticas** ↔ presentes literalmente donde corresponda.
+- TOC actualizado en el mismo commit.
+- **Confirmación No-Data-Loss** antes de cerrar.
+
+98.3.13 [ANCHOR:sec-98-3-trazabilidad] Trazabilidad y control de cambios (externos al bloque)
+- Control de cambios visible **solo** en **ARV-PLN-001 – Listado General de Documentos Internos** (versión, fecha, autor, motivo).
+- **Sin** evidencias de edición (colores, diffs, “antes/ahora”) dentro de los bloques TXT.
+- Mantener **anclas estables**; si hay renumeración, publicar **alias temporales** hasta normalizar referencias.
+
+98.3.14 [ANCHOR:sec-98-3-ritmo] Ritmo de trabajo
+- **Un (1) bloque por mensaje**, siempre tras releer el RAW.
+- Fragmentos “sueltos” se integran como subpuntos numerados del bloque actual.
+- Si el bloque crece demasiado, **dividir** (sin pérdida de contenido).
+
+98.3.15 [ANCHOR:sec-98-3-frases] Frases-gatillo (opcionales de operación)
+- “Charly, sincronizá Manual Maestro vX y confirmá carga completa.”
+- “Charly, ejecutá Chequeo de Entorno y confirmá si la búsqueda web está activa.”
+- “Charly, trabajemos en modo RAG con estas fuentes y citá todo lo que uses.”
+- “Charly, estamos en zona de límite: migrá a un chat nuevo y re-sincronizá.”
+
+98.3.16 [ANCHOR:sec-98-3-moldes] Moldes listos para pegar
+- A) Sección madre (X.0)
+  - Cabecera `ruby` + SECCIÓN X.0 —
+  - X.0.1 Propósito · X.0.2 Alcance · X.0.3 Resumen de contenidos · X.0.4 Orientación de lectura · Conclusión.
+- B) Sección operativa (X.Y)
+  - Cabecera `ruby` + SECCIÓN X.Y —
+  - X.Y.1 Propósito · X.Y.2 Alcance · X.Y.3 (subtítulo) · X.Y.4 (subtítulo) · Conclusión.
+
+98.3.17 [ANCHOR:sec-98-3-enfasis-sintaxis] Énfasis y sintaxis permitida/prohibida
+- Permitido: **doble asterisco** para resaltar referencias internas o literales clave del Manual (convención visual).
+- Prohibido: `#` al inicio de línea dentro del BLOQUE TXT (encabezado ATX). El bloque define su propio título “SECCIÓN X.Y – …” y subpuntos ISO 2145.
+- Prohibido: numeraciones “1)”, letras o romanos en el contenido; usar listas con “-”.
+
+98.3.18 [ANCHOR:sec-98-3-autochequeo] Autochequeo rápido previo a “Conclusión”
+- ¿Algún `#` al inicio de línea? Corregir.
+- ¿Referencias internas claras y, si aplica, con **…**?
+- ¿Numeración ISO 2145 consistente (sin punto final)?
+- ¿TOC actualizado en el mismo commit si hubo cambios?
+- ¿Anclas presentes en cada subpunto y slugs estables?
+
+98.3.19 [ANCHOR:sec-98-3-mono] Tipografía monoespaciada y árboles de carpetas
+- Redactar y revisar con **tipografía monoespaciada** para garantizar alineación estable en tablas, listados y árboles.
+- Para jerarquías, emplear el estándar **ARV-Tree-UTF** (box-drawing) o, si el entorno no soporta Unicode, el perfil **ARV-Tree-ASCII**. Ver **99.20** y **99.21**.
+
+98.3.20 [ANCHOR:sec-98-3-codificacion] Normalización de codificación y finales de línea
+- Emitir archivos **UTF-8 sin BOM** y con finales de línea **LF** para evitar artefactos visuales al pegar.
+- Limpiar espacios especiales (NBSP/zero-width) y guiones tipográficos (–/—); usar espacio normal y guion ASCII “-”.
+
+Conclusión de la Sección 98.3
+Se preserva íntegramente el procedimiento original (98.3.1–98.3.16) y se añaden guías operativas sobre énfasis, sintaxis, tipografía monoespaciada, árboles y normalización técnica (98.3.17–98.3.20) para eliminar desvíos sin afectar la doctrina No-Data-Loss.
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 98.3 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 99.0 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 99.0
+Title: Metodología y Formato — Propósito, Alcance y Contenidos
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_21.35 (UTC-3)
+Anchors: sec-99-0-proposito,sec-99-0-alcance,sec-99-0-contenidos,sec-99-0-lectura,sec-99-0-controles,sec-99-0-mono
+
+SECCIÓN 99.0 – METODOLOGÍA Y FORMATO — PROPÓSITO, ALCANCE Y CONTENIDOS
+
+99.0.1 [ANCHOR:sec-99-0-proposito] Propósito
+Presentar el marco metodológico y de formato para escribir, reescribir y mantener el Manual Maestro (ARV-MAN-001) sin pérdida de información, con salida “nativa” y estructura estable para lectura humana y por máquinas.
+
+99.0.2 [ANCHOR:sec-99-0-alcance] Alcance
+Aplica al Front Matter (Índice fuera de la numeración) y a todo el cuerpo (0..n) con numeración ISO 2145, uso de bloques TXT (cartela `ruby`) y reglas operativas (RAG, plantillas, checklist, etc.).
+
+99.0.3 [ANCHOR:sec-99-0-contenidos] Resumen de contenidos de la Sección 99
+- **99.1 – Métricas y criterios de aceptación (reservada).** Indicadores de calidad/aceptación para cada bloque de esta sección.  
+- **99.2 – Riesgos y mitigaciones (reservada).** Riesgos editoriales/operativos y sus controles.  
+- **99.3 – Protocolo operativo con IA (Charly), memoria y navegación web.** Modo de trabajo por bloques, sincronización y uso de fuentes en línea.  
+- **99.4 – Formato TXT canónico y micro-encabezado.** Banners, metadatos, anclas y sintaxis.  
+- **99.5 – Índices del Manual.** TOC en front matter + índice analítico.  
+- **99.6 – Sincronización inicial y chequeo de entorno.** Procedimientos previos a redacción.  
+- **99.7 – Publicación legible por máquina y evidencias (RAG).** Reglas de citación y fuentes.  
+- **99.8 – Frases-gatillo y plantillas de solicitud repetible.** Comandos operativos.  
+- **99.9 – Estructura y profundidad de numeración; anclas.** ISO 2145 y buenas prácticas.  
+- **99.10 – Checklist de conformidad para nuevos bloques.** Controles de salida.  
+- **99.11 – Política de evidencias y citación (RAG).** Casos dinámicos/externos.  
+- **99.12 – Plantillas mínimas.** Encabezado maestro y micro-encabezado.  
+- **99.13 – Secciones madre (X.0).** Definición y uso.  
+- **99.14 – Reservas universales (X.1/X.2).** Métricas y Riesgos en primer lugar.  
+- **99.15 – Doctrina “No-Data-Loss”.** Sustitución mínima; sin contracción.  
+- **99.16 – Control de cambios (solo ARV-PLN-001).** Sin marcas en bloques.  
+- **99.17 – Chequeo anti-desvíos.** Reglas críticas, nombres exactos, TOC.  
+- **99.18 – Ritmo de trabajo.** 1 bloque por mensaje y relectura del RAW.  
+- **99.19 – Molde listo para pegar.** Plantilla X.Y.
+
+99.0.4 [ANCHOR:sec-99-0-lectura] Orientación de lectura
+1) Comenzar por **99.3–99.9** para entender protocolo, formato y numeración.  
+2) Usar **99.10–99.12** como herramientas de emisión/plantilla.  
+3) Consultar **99.13–99.16** para gobierno del documento (madres, reservas, No-Data-Loss y control de cambios).  
+4) Ver **99.17–99.19** antes de cerrar un bloque y para copiar el molde.
+
+99.0.5 [ANCHOR:sec-99-0-controles] Controles editoriales reforzados (adición)
+- **Énfasis**: se permite el uso de **doble asterisco** para referencias internas o literales clave del Manual.  
+- **Prohibiciones**: no usar `#` al inicio de línea (encabezado ATX) dentro del BLOQUE TXT; no usar numeraciones “1)”, letras o romanos en el contenido (listas internas con “-”).  
+- **Numeración**: aplicar ISO 2145 (arábigos con puntos, sin punto final en el último nivel; “0” introductorio permitido).  
+- **Anclas**: todo subpunto con `[ANCHOR:sec-x-y-…]` coherente con su numeral.  
+- **TOC**: actualizar en el **mismo commit** si cambian títulos o numeración.  
+- **No-Data-Loss**: queda prohibido resumir o contraer materia normativa relevante.
+
+99.0.6 [ANCHOR:sec-99-0-mono] Tipografía monoespaciada y árboles
+- Los bloques deben redactarse y verificarse con **tipografía monoespaciada** para garantizar alineación estable en tablas, listados y **árboles**.  
+- Los árboles de carpetas/jerarquías se entregarán con el estándar **ARV-Tree-UTF** (box-drawing). Si el entorno no soporta Unicode, usar **ARV-Tree-ASCII**. Ver **99.20** y **99.21**.
+
+Conclusión de la Sección 99.0
+Se conserva íntegro el contenido original (99.0.1–99.0.4) y se suman controles explícitos sobre énfasis, prohibiciones sintácticas, numeración ISO 2145, anclas, TOC, No-Data-Loss y el requisito tipográfico/árboles (99.0.5–99.0.6) para evitar desvíos futuros.
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 99.0 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 99.1 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 99.1
+Title: Métricas y criterios de aceptación (reservada)
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_21.44 (UTC-3)
+Anchors: sec-99-1-proposito,sec-99-1-alcance,sec-99-1-metricas-forma,sec-99-1-metricas-contenido,sec-99-1-metricas-trazabilidad,sec-99-1-metricas-rag,sec-99-1-metricas-calidad,sec-99-1-aceptacion,sec-99-1-mf08,sec-99-1-mf09,sec-99-1-mf10,sec-99-1-mp04
+
+SECCIÓN 99.1 – MÉTRICAS Y CRITERIOS DE ACEPTACIÓN (RESERVADA)
+
+99.1.1 [ANCHOR:sec-99-1-proposito] Propósito
+Definir **indicadores objetivos** y **criterios de aceptación** para cada bloque TXT del Manual, a fin de asegurar forma, contenido, trazabilidad y legibilidad por máquina sin pérdida de información.
+
+99.1.2 [ANCHOR:sec-99-1-alcance] Alcance
+Aplica a **todo bloque** del cuerpo (0..n) y a las secciones de la propia Sección 99. Los indicadores se verifican **antes de aprobar** (previo a publicar/mergear).
+
+99.1.3 [ANCHOR:sec-99-1-metricas-forma] Métricas de forma (estructura y formato)
+- **MF-01 Bloque canónico**: banners “INICIO/FIN BLOQUE…” presentes e idénticos.
+- **MF-02 Micro-encabezado completo**: `Version`, `Section`, `Title`, `DocCode`, `Timestamp (UTC-3)`, `Anchors`.
+- **MF-03 Título de sección**: “SECCIÓN X.Y – Título exacto”.
+- **MF-04 Anclas**: cada subpunto expone `[ANCHOR:sec-x-y-…]` coherente con su numeral.
+- **MF-05 Numeración**: esquema ISO 2145 (X, X.Y, X.Y.Z…), **sin punto final**.
+- **MF-06 Conclusión**: bloque cierra con “Conclusión de la Sección X.Y”.
+- **MF-07 Cartela**: bloque entregado como fenced code con info string `ruby`.
+
+99.1.4 [ANCHOR:sec-99-1-metricas-contenido] Métricas de contenido (exhaustividad y literalidad)
+- **MC-01 No-Resumen**: no se contrae materia normativa relevante; todo lo pertinente del RAW se incluye.
+- **MC-02 Literales (Golden Set)**: citas **textuales** donde aporten precisión (entre comillas o como `>`).
+- **MC-03 Reubicación no destructiva**: si parte del contenido deja de aplicar, se **reubica** (p. ej., hist/nota) sin borrarlo.
+- **MC-04 Listas operativas**: requisitos, pasos, columnas y subcarpetas expresados como listas o tablas textuales.
+
+99.1.5 [ANCHOR:sec-99-1-metricas-trazabilidad] Métricas de trazabilidad y gobierno
+- **MT-01 TOC**: si cambian títulos/numeración, TOC (Front Matter) actualizado en **el mismo commit**.
+- **MT-02 Control de cambios**: visibilidad **única** en ARV-PLN-001; **sin** marcas de edición dentro del bloque.
+- **MT-03 Anclas estables**: mantener slugs; si hay renumeración, alias temporales hasta estabilizar referencias.
+
+99.1.6 [ANCHOR:sec-99-1-metricas-rag] Métricas RAG / legible por máquina (cuando aplica)
+- **MR-01 Publicación idónea**: fuentes accesibles como **RAW/HTML estático**; PDF con **capa de texto**.
+- **MR-02 Citación visible**: cuando el contenido es cambiante/externo, devolver citas explícitas y, si procede, literales breves.
+- **MR-03 Consistencia**: numerales y `Anchors` replicables como ids si hay espejo HTML/JSON.
+
+99.1.7 [ANCHOR:sec-99-1-metricas-calidad] Métricas de calidad editorial
+- **MQ-01 Claridad**: frases cortas, sin ambigüedades; evitar sinónimos para nombres canónicos.
+- **MQ-02 Cohesión**: subsecciones ordenadas (Propósito → Alcance → Operativa → Conclusión).
+- **MQ-03 Terminología controlada**: nombres exactos de carpetas, columnas, módulos y políticas.
+
+99.1.8 [ANCHOR:sec-99-1-aceptacion] Criterios de aceptación (check final)
+Un bloque es **Aprobado** si MF-01..07, MC-01..04, MT-01..03, MR-01..03 y MQ-01..03 = **OK**. Si cualquiera falla, el bloque se **retrabaja** hasta cumplir los mínimos.
+
+99.1.9 [ANCHOR:sec-99-1-mf08] MF-08 — Prohibición de `#` en BLOQUE TXT
+- Verificar que **ninguna** línea comience con `#` (encabezado ATX). Incumplimiento → **Re-trabajar**.
+
+99.1.10 [ANCHOR:sec-99-1-mf09] MF-09 — Énfasis controlado con doble asterisco
+- Cuando se use énfasis, aplicar **únicamente** doble asterisco para referencias internas o literales clave; evitar otros marcadores (itálicas, subrayados).
+
+99.1.11 [ANCHOR:sec-99-1-mf10] MF-10 — Tipografía monoespaciada y árboles
+- Redactar y verificar con **tipografía monoespaciada** para preservar alineación en tablas/listados/árboles.
+- Si el bloque contiene jerarquías, exigir el estándar **ARV-Tree-UTF** (box-drawing) o, si no hay soporte Unicode, **ARV-Tree-ASCII** (ver 99.20/99.21).
+
+99.1.12 [ANCHOR:sec-99-1-mp04] MP-04 — Normalización técnica de archivo (cuando aplique)
+- Emitir archivos **UTF-8 sin BOM** y finales de línea **LF**; eliminar NBSP/zero-width; normalizar guiones a ASCII “-”.
+- Rechazar bloques que no cumplan y solicitar normalización antes de aprobar.
+
+Conclusión de la Sección 99.1
+Se conserva íntegramente la definición original de métricas de aceptación (99.1.1–99.1.8) y se agregan validaciones de formato y soporte (99.1.9–99.1.12) para blindar el bloque contra desvíos de sintaxis, tipografía y codificación sin afectar la doctrina **No-Data-Loss**.
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 99.1 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 99.2 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 99.2
+Title: Riesgos y mitigaciones (reservada)
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_21.52 (UTC-3)
+Anchors: sec-99-2-proposito,sec-99-2-alcance,sec-99-2-riesgos,sec-99-2-controles,sec-99-2-escalamiento,sec-99-2-r11,sec-99-2-c10,sec-99-2-r12,sec-99-2-c11
+
+SECCIÓN 99.2 – RIESGOS Y MITIGACIONES (RESERVADA)
+
+99.2.1 [ANCHOR:sec-99-2-proposito] Propósito
+Identificar **riesgos editoriales, operativos y de publicación** y fijar **controles preventivos** para evitar pérdida de información y/o incoherencias.
+
+99.2.2 [ANCHOR:sec-99-2-alcance] Alcance
+Aplica a la producción/edición de **todos los bloques** (0..n), a la publicación legible por máquina y a la sincronización del Manual.
+
+99.2.3 [ANCHOR:sec-99-2-riesgos] Riesgos típicos (catálogo)
+- **R-01 Contracción de contenido** (resumen involuntario de reglas).  
+- **R-02 Pérdida de literales** (Golden Set omitido o parafraseado).  
+- **R-03 Inconsistencia de numerales/anclas** (rotura de enlaces internos/externos).  
+- **R-04 TOC desactualizado** (índice no refleja altas/bajas/renumeración).  
+- **R-05 Publicación no legible por máquina** (links “/view”, PDFs sin texto).  
+- **R-06 Evidencias sin cita** (contenido cambiante sin fuente).  
+- **R-07 Dispersión de código/formato** (micro-encabezado incompleto, banners faltantes).  
+- **R-08 Ruido editorial** (marcas de edición dentro del bloque).  
+- **R-09 Saturación de sesión** (pérdida de coherencia por límite de contexto).  
+- **R-10 Terminología no canónica** (sinónimos en nombres de carpetas/columnas).
+
+99.2.4 [ANCHOR:sec-99-2-controles] Controles y mitigaciones
+- **C-01 No-Data-Loss** (R-01/R-02): prohibido resumir; literales obligatorias donde aporten; reubicación no destructiva.  
+- **C-02 Anclas/Numerales** (R-03): mantener slugs estables; alias temporales si renumeran.  
+- **C-03 TOC** (R-04): actualizar en el **mismo commit** que el cambio.  
+- **C-04 Publicación** (R-05): usar **RAW/HTML estático**; PDF con texto; no “/view”.  
+  > “Preferir… archivo plano (RAW) o HTML estático… PDF debe incluir capa de texto.”  
+- **C-05 Citación** (R-06): devolver citas visibles cuando la materia es cambiante/externa.  
+  > “Las respuestas deben anclarse a fuentes consultables… y devolver citas visibles.”  
+- **C-06 Formato canónico** (R-07): banners y micro-encabezado obligatorios.  
+- **C-07 Salida nativa** (R-08): **sin** evidencias de edición dentro del bloque; control visible en ARV-PLN-001.  
+- **C-08 Sincronización** (R-09): ejecutar **Chequeo de Entorno** y re-sincronización cuando se detecte límite de contexto.  
+  > “Confirmación obligatoria: ‘Manual Maestro cargado y sincronizado; entorno web: [activo/inactivo].’”  
+- **C-09 Terminología** (R-10): nombres exactos para carpetas/columnas/módulos.
+
+99.2.5 [ANCHOR:sec-99-2-escalamiento] Escalamiento
+Si el riesgo persiste tras aplicar controles, el bloque se **retira de aprobación**, se registra en ARV-PLN-001 y se reemite la versión corregida.
+
+99.2.6 [ANCHOR:sec-99-2-r11] R-11 — Encabezados ATX y numeraciones no canónicas dentro del bloque
+Uso de `#` al inicio de línea (encabezado ATX) o de esquemas de numeración ajenos (por ejemplo “1)”, “a)”), que interfieren con el formato del BLOQUE TXT y con la numeración ISO 2145.
+
+99.2.7 [ANCHOR:sec-99-2-c10] C-10 — Control para R-11
+Prohibir `#` al inicio de línea y cualquier numeración no ISO 2145; validar con el checklist de forma (99.1: MF-08/MF-05) y mantener listas internas con guiones “-”.
+
+99.2.8 [ANCHOR:sec-99-2-r12] R-12 — Desalineación visual por tipografía/codificación
+Desalineación de árboles/tablas por: mezcla de tipografías no monoespaciadas; falta de soporte para caracteres de box-drawing; finales de línea mezclados (CRLF/LF); presencia de BOM; espacios especiales (NBSP/zero-width) o guiones tipográficos (–/—) en lugar del guion ASCII.
+
+99.2.9 [ANCHOR:sec-99-2-c11] C-11 — Control para R-12
+Usar **tipografía monoespaciada** al redactar y revisar; emitir archivos en **UTF-8 sin BOM** y **LF**; reemplazar NBSP/zero-width por espacio normal y eliminar guiones tipográficos en favor de “-”; para jerarquías, emplear **ARV-Tree-UTF** (box-drawing) o, si el entorno no soporta Unicode, **ARV-Tree-ASCII** (ver 99.20 y 99.21).
+
+Conclusión de la Sección 99.2
+Se conserva íntegro el catálogo y los controles originales (99.2.1–99.2.5) y se agregan salvaguardas específicas (99.2.6–99.2.9) para prevenir encabezados ATX, numeración no canónica y problemas de espaciado/codificación, sin afectar la doctrina **No-Data-Loss**.
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 99.2 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 99.3 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 99.3
+Title: Formato TXT canónico + Numeración (ISO 2145) + Anclas
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_21.59 (UTC-3)
+Anchors: sec-99-3-proposito,sec-99-3-alcance,sec-99-3-formato,sec-99-3-numeracion,sec-99-3-anclas,sec-99-3-sintaxis,sec-99-3-mono,sec-99-3-normalizacion
+
+SECCIÓN 99.3 – FORMATO TXT CANÓNICO + NUMERACIÓN (ISO 2145) + ANCLAS
+
+99.3.1 [ANCHOR:sec-99-3-proposito] Propósito
+Unificar en un único capítulo las **reglas de formato del bloque TXT**, la **numeración ISO 2145** por niveles y el uso de **anclas** reproducibles.
+
+99.3.2 [ANCHOR:sec-99-3-alcance] Alcance
+Aplica a **todos los bloques** (0..n) y a cualquier espejo HTML/JSON.
+
+99.3.3 [ANCHOR:sec-99-3-formato] Formato TXT canónico (bloques y metadatos)
+- Entregar el bloque como fenced code con `ruby`.  
+- Incluir **micro-encabezado** obligatorio y en este orden:
+  > `=== BLOQUE TXT PARA MANUAL ARVERIFICA ===`  
+  > `Version: vN`  
+  > `Section: X.Y`  
+  > `Title: …`  
+  > `DocCode: ARV-MAN-001`  
+  > `Timestamp: YYYY-MM-DD_HH.MM (UTC-3)`  
+  > `Anchors: …`  
+- Usar banners **INICIO/FIN** del bloque.  
+- Cerrar con **Conclusión de la Sección X.Y**.
+
+99.3.4 [ANCHOR:sec-99-3-numeracion] Numeración ISO 2145 (profundidad y práctica)
+- Numeración **arábiga** con puntos: **X, X.Y, X.Y.Z, X.Y.Z.W**; **sin** punto final.  
+- Profundidad habitual hasta **4 niveles**; niveles superiores migran a anexos/tablas.  
+- Se admite **“0”** como sección introductoria cuando corresponda.
+
+99.3.5 [ANCHOR:sec-99-3-anclas] Anclas e ids reutilizables
+- Cada numeral expone `[ANCHOR:sec-x-y-z]` coherente con su ruta.  
+- Si se publica espejo HTML, replicar anclas como **id** del encabezado; mantener **estabilidad** ante cambios menores.
+
+99.3.6 [ANCHOR:sec-99-3-sintaxis] Sintaxis estricta del BLOQUE TXT
+- Permitido: uso de **doble asterisco** para enfatizar referencias internas o literales clave del Manual.  
+- Prohibido: `#` al inicio de línea (encabezado ATX) dentro del **BLOQUE TXT**.  
+- Prohibido: numeraciones “1)”, letras o romanos en el contenido; para listas internas usar “-”.
+
+99.3.7 [ANCHOR:sec-99-3-mono] Tipografía monoespaciada y árboles
+- Redactar y revisar los bloques con **tipografía monoespaciada** para conservar alineación en tablas, listados y **árboles**.  
+- Cuando haya jerarquías/árboles, usar el estándar **ARV-Tree-UTF** (box-drawing); si el entorno no soporta Unicode, usar **ARV-Tree-ASCII** (ver **99.20** y **99.21**).
+
+99.3.8 [ANCHOR:sec-99-3-normalizacion] Normalización técnica de archivo
+- Emitir archivos **UTF-8 sin BOM** y con finales de línea **LF**.  
+- Evitar caracteres invisibles/atípicos en texto plano (NBSP/zero-width; guiones tipográficos “–/—”): usar espacio normal y el guion ASCII “-”.
+
+Conclusión de la Sección 99.3
+El formato canónico + numeración ISO 2145 + anclas estables, junto con sintaxis controlada, tipografía monoespaciada y normalización técnica, garantizan **legibilidad humana y por máquinas** y una navegación confiable, sin pérdida de información.
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 99.3 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 99.4 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 99.4
+Title: Protocolo con IA: Operativa, Sincronización y RAG
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_22.06 (UTC-3)
+Anchors: sec-99-4-proposito,sec-99-4-alcance,sec-99-4-operativa,sec-99-4-sincronizacion,sec-99-4-publicacion,sec-99-4-frases,sec-99-4-conclusion
+
+SECCIÓN 99.4 – PROTOCOLO CON IA: OPERATIVA, SINCRONIZACIÓN Y RAG
+
+99.4.1 [ANCHOR:sec-99-4-proposito] Propósito
+Estandarizar el trabajo con IA (Charly) por bloques autocontenidos, su sincronización inicial y la publicación/citación legible por máquina cuando la materia es cambiante.
+
+99.4.2 [ANCHOR:sec-99-4-alcance] Alcance
+Aplica a la ejecución diaria de tareas del Manual, en sesiones nuevas o continuadas, y a la citación de fuentes internas/externas.
+
+99.4.3 [ANCHOR:sec-99-4-operativa] Operativa por bloques y memoria
+- Cada bloque debe ser autocontenido; la IA no asume contexto no presente en el bloque.  
+- La memoria activa es limitada: si un bloque crece, dividir en subpuntos o nuevos bloques sin perder contenido.  
+- Cuando haya normativa cambiante, operar en modo RAG con citas visibles.  
+- Mantener terminología canónica (nombres exactos de carpetas, columnas, módulos, políticas).  
+- Prohibido resumir contenido normativo relevante (No-Data-Loss).
+
+99.4.4 [ANCHOR:sec-99-4-sincronizacion] Sincronización inicial y chequeo de entorno
+- Confirmación obligatoria: "Manual Maestro cargado y sincronizado; entorno web: [activo/inactivo]".  
+- Ante señales de saturación de contexto: "Charly, estamos en zona de límite: migrá a un chat nuevo y re-sincronizá."  
+- Releer el RAW por URL vigente antes de comenzar cada bloque.
+
+99.4.5 [ANCHOR:sec-99-4-publicacion] Publicación legible por máquina y citación (RAG)
+- Preferir RAW/HTML estático; evitar vistas /view; PDF con capa de texto.  
+- Si hay espejo HTML/Markdown: encabezados ATX compatibles y anclas estables (ids iguales a los slugs `[ANCHOR:...]`).  
+- JSON espejo opcional con claves = numerales ISO 2145 para automatización.  
+- Citar de forma visible cuando la materia sea cambiante o provenga de terceros.
+
+99.4.6 [ANCHOR:sec-99-4-frases] Frases-gatillo y plantillas de solicitud
+- "Charly, sincronizá Manual Maestro vX y confirmá carga completa."  
+- "Charly, ejecutá Chequeo de Entorno y confirmá si la búsqueda web está activa."  
+- "Charly, trabajemos en modo RAG con estas fuentes y citá todo lo que uses."  
+- "Charly, estamos en zona de límite: migrá a un chat nuevo y re-sincronizá."
+
+99.4.7 [ANCHOR:sec-99-4-conclusion] Conclusión de la Sección 99.4
+El protocolo fija un ciclo estable: sincronizar → operar por bloques → publicar/citar de forma legible por máquina → mantener anclas y TOC, preservando No-Data-Loss y terminología canónica.
+
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 99.4 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 99.5 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 99.5
+Title: Índices: TOC (Front Matter) e Índice Analítico
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_22.14 (UTC-3)
+Anchors: sec-99-5-proposito,sec-99-5-alcance,sec-99-5-toc,sec-99-5-analitico,sec-99-5-actualizacion,sec-99-5-implementacion
+
+SECCIÓN 99.5 – ÍNDICES: TOC (FRONT MATTER) E ÍNDICE ANALÍTICO
+
+99.5.1 [ANCHOR:sec-99-5-proposito] Propósito
+Definir cómo se construyen y mantienen los **índices del Manual**, separando el **TOC** (estructural y jerárquico) del **índice analítico** (temático y por términos) para lograr navegación humana y consumo por máquinas.
+
+99.5.2 [ANCHOR:sec-99-5-alcance] Alcance
+Aplica a todo el Manual (0..n y 99..), tanto en su versión TXT como en cualquier espejo HTML/JSON. El TOC **siempre** reside en el **Front Matter** (fuera de la numeración del cuerpo).
+
+99.5.3 [ANCHOR:sec-99-5-toc] TOC (Front Matter)
+- Ubicación: **Front Matter** al inicio del documento.
+- Contenido: lista jerárquica de secciones hasta nivel 3; niveles más profundos se listan bajo su padre o se delegan a anexos cuando sea extenso.
+- Estabilidad: conservar **texto exacto** de cada “Title:” y su **Section:**.
+- Renumeración: si cambia el orden/título/índice, el TOC se actualiza **en el mismo commit** que el cambio de la sección.
+- Enlaces: cada entrada del TOC debe mapear a anclas `[ANCHOR:...]` estables.
+
+99.5.4 [ANCHOR:sec-99-5-analitico] Índice Analítico (temático)
+- Estructura: lista alfabética de **términos controlados** con remisiones (`véase`, `véase también`).
+- Profundidad: puede referenciar numerales (X.Y.Z) y subtítulos útiles.
+- Terminología: usar **nombres exactos** de artefactos (carpetas, columnas, módulos).
+- Mantenibilidad: cuando aparezcan nuevos términos normativos, incorporarlos conservando los anteriores (No-Data-Loss).
+
+99.5.5 [ANCHOR:sec-99-5-actualizacion] Reglas de actualización
+- Cuando se agregue/renombre/elimine una sección, **actualizar TOC** y, si procede, **índice analítico**.
+- Mantener **anclas estables**; si hay renumeraciones, publicar **alias temporales** hasta normalizar todas las referencias.
+- No imprimir marcas de edición en los bloques; el cambio se registra en **ARV-PLN-001**.
+
+99.5.6 [ANCHOR:sec-99-5-implementacion] Implementación en espejos HTML/JSON (opcional)
+- HTML: reproducir jerarquía con encabezados ATX; las `[ANCHOR:...]` del TXT se convierten en `id` en los encabezados.
+- JSON: estructura opcional con claves = numerales ISO 2145 y valores = contenido y metadatos (útil para RAG/automatización).
+
+Conclusión de la Sección 99.5
+El **TOC** organiza la estructura y el **índice analítico** optimiza la búsqueda temática; ambos deben mantenerse **sin pérdida** al ritmo de los cambios del Manual.
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 99.5 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 99.6 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 99.6
+Title: Plantillas y Encabezados
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_22.22 (UTC-3)
+Anchors: sec-99-6-proposito,sec-99-6-alcance,sec-99-6-encabezado-maestro,sec-99-6-micro-encabezado,sec-99-6-moldes,sec-99-6-variantes,sec-99-6-validacion,sec-99-6-mono-codigo
+
+SECCIÓN 99.6 – PLANTILLAS Y ENCABEZADOS
+
+99.6.1 [ANCHOR:sec-99-6-proposito] Propósito
+Unificar **plantillas** y **encabezados** para garantizar consistencia, trazabilidad y legibilidad por máquina en cada bloque TXT del Manual, evitando divergencias de formato.
+
+99.6.2 [ANCHOR:sec-99-6-alcance] Alcance
+Abarca: **encabezado maestro** del documento; **micro-encabezado** de cada bloque; **moldes** de sección madre y sección operativa; **variantes controladas** para anexos/tablas y espejos HTML/JSON.
+
+99.6.3 [ANCHOR:sec-99-6-encabezado-maestro] Encabezado maestro (al inicio del Manual)
+DocCode: ARV-MAN-001  
+DocTitle: Manual Maestro ArVerifica  
+Version: vN  
+Timestamp: YYYY-MM-DDTHH:MM:SS-03:00  
+Owner: ArVerifica  
+Scope: Normativa y sistema de gestión  
+(El **control de cambios** es visible solo en ARV-PLN-001; no se imprimen marcas de edición dentro del Manual.)
+
+99.6.4 [ANCHOR:sec-99-6-micro-encabezado] Micro-encabezado por bloque (obligatorio; orden exacto)
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===  
+Version: vN  
+Section: X.Y  
+Title: (título exacto)  
+DocCode: ARV-MAN-001  
+Timestamp: YYYY-MM-DD_HH.MM (UTC-3)  
+Anchors: sec-x-y-proposito,sec-x-y-alcance,sec-x-y-a,sec-x-y-b,...
+
+99.6.5 [ANCHOR:sec-99-6-moldes] Moldes listos para pegar
+**A) Sección madre (X.0)**  
+SECCIÓN X.0 – (título madre)  
+X.0.1 [ANCHOR:sec-x-0-proposito] Propósito  
+X.0.2 [ANCHOR:sec-x-0-alcance] Alcance  
+X.0.3 [ANCHOR:sec-x-0-resumen] Resumen de contenidos  
+X.0.4 [ANCHOR:sec-x-0-lectura] Orientación de lectura  
+(Conclusión de la Sección X.0)
+
+**B) Sección operativa (X.Y)**  
+SECCIÓN X.Y – (título exacto)  
+X.Y.1 [ANCHOR:sec-x-y-proposito] Propósito  
+X.Y.2 [ANCHOR:sec-x-y-alcance] Alcance  
+X.Y.3 [ANCHOR:sec-x-y-a] (subtítulo)  
+X.Y.4 [ANCHOR:sec-x-y-b] (subtítulo)  
+(Conclusión de la Sección X.Y)
+
+99.6.6 [ANCHOR:sec-99-6-variantes] Variantes controladas (cuando aplica)
+- **Anexos/Tablas** dentro de una sección: numerar como subpuntos (X.Y.3, X.Y.4, …). Si excede la profundidad práctica, mover a Anexo con referencia cruzada.  
+- **Espejos HTML/Markdown**: reproducir encabezados y anclas; en HTML, asignar `id` con los slugs de `[ANCHOR:…]`.  
+- **JSON espejo** (opcional): claves = numerales ISO 2145; valores = contenido y metadatos, para automatización/RAG.
+
+99.6.7 [ANCHOR:sec-99-6-validacion] Validación de forma (previa a aprobación)
+- Banners **INICIO/FIN** presentes e idénticos.  
+- **Micro-encabezado** completo y en el **orden** de 99.6.4.  
+- **Título** “SECCIÓN X.Y – …” correcto.  
+- **Anclas** presentes en todos los subpuntos y coherentes con su numeral.  
+- **Conclusión** incluida (frase de cierre).  
+- **No-Data-Loss** verificado (nada resumido ni contraído).
+
+99.6.8 [ANCHOR:sec-99-6-mono-codigo] Tipografía monoespaciada y normalización técnica
+- Redactar y revisar todos los bloques con **tipografía monoespaciada** para preservar alineación en listas, tablas y **árboles**.  
+- Codificación y EOL: emitir archivos **UTF-8 sin BOM** y finales de línea **LF**; eliminar NBSP/zero-width y guiones tipográficos (–/—), usando espacio normal y el guion ASCII “-”.  
+- Árboles/jerarquías: aplicar **ARV-Tree-UTF** (box-drawing) o, si el entorno no soporta Unicode, **ARV-Tree-ASCII** (ver **99.20** y **99.21**).
+
+Conclusión de la Sección 99.6
+Las plantillas y encabezados estandarizan la forma de cada bloque, con control tipográfico y técnico para asegurar **uniformidad**, **legibilidad por máquinas** y **No-Data-Loss** en todo el Manual.
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 99.6 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 99.7 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 99.7
+Title: Checklist de Conformidad + Chequeo anti-desvíos
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_22.30 (UTC-3)
+Anchors: sec-99-7-proposito,sec-99-7-alcance,sec-99-7-checklist,sec-99-7-antidesvios,sec-99-7-procedimiento,sec-99-7-mono-codificacion
+
+SECCIÓN 99.7 – CHECKLIST DE CONFORMIDAD + CHEQUEO ANTI-DESVÍOS
+
+99.7.1 [ANCHOR:sec-99-7-proposito] Propósito
+Establecer una **lista de verificación única** para aprobar bloques y un **chequeo anti-desvíos** que prevenga pérdidas de información, inconsistencias o roturas de referencia.
+
+99.7.2 [ANCHOR:sec-99-7-alcance] Alcance
+Todo bloque del Manual (0..n; 99..). Se aplica **antes** del cierre y publicación.
+
+99.7.3 [ANCHOR:sec-99-7-checklist] Checklist de Conformidad (mínimos obligatorios)
+- **Forma**: banners “INICIO/FIN”, cartela `ruby`, **micro-encabezado** completo y en orden, título “SECCIÓN X.Y – …”, **anclas** por subpunto, **Conclusión**.  
+- **Numeración**: ISO 2145 hasta el nivel necesario (**sin punto final**).  
+- **Contenido**: **No-Resumen** (todo lo relevante del RAW incorporado); **literales** del Golden Set donde aporten precisión.  
+- **Listas/tablas**: requisitos, pasos, columnas y subcarpetas expresados claramente (texto plano).  
+- **Trazabilidad**: **TOC** actualizado si cambió algo; anclas estables/alias temporales si hubo renumeración.  
+- **Publicación legible por máquina (cuando aplica)**: RAW/HTML estático; **PDF con texto**; **citas visibles** en materia cambiante/externa.  
+- **Control de cambios**: visible **solo** en ARV-PLN-001.  
+- **Sintaxis**: **prohibido** `#` al inicio de línea dentro del BLOQUE TXT; listas internas con “-”; énfasis permitido solo con **doble asterisco**.  
+- **Terminología**: nombres **exactos** (carpetas, columnas, módulos, políticas).  
+
+99.7.4 [ANCHOR:sec-99-7-antidesvios] Chequeo anti-desvíos (detalle)
+- Árbol/carpeta/tablas ↔ coinciden con el RAW (sin omisiones).  
+- **Nombres exactos** ↔ sin sinónimos; verificación cruzada con artefactos reales.  
+- **Campos obligatorios** ↔ presentes y completos (no suprimidos ni contraídos).  
+- **Reglas críticas** ↔ presentes como **literales** cuando corresponda.  
+- **Sin ruidos editoriales** ↔ no imprimir evidencias de edición dentro del bloque.  
+- **TOC** ↔ actualizado en el **mismo commit**.  
+- **Anclas** ↔ slugs estables; alias temporales si hubo renumeración.  
+
+99.7.5 [ANCHOR:sec-99-7-procedimiento] Procedimiento de aprobación
+1) Ejecutar **Checklist 99.7.3**.  
+2) Ejecutar **Anti-Desvíos 99.7.4**.  
+3) Corregir desvíos detectados.  
+4) Añadir/confirmar **Conclusión** del bloque.  
+5) Actualizar **TOC** si aplica.  
+6) Registrar revisión en **ARV-PLN-001** (fuera del contenido).
+
+99.7.6 [ANCHOR:sec-99-7-mono-codificacion] Requisito tipográfico y normalización técnica (aplicación del control)
+- **Tipografía**: redactar y revisar con **monoespaciada** para preservar alineación en listas/tablas y **árboles** (box-drawing).  
+- **Codificación/EOL**: emitir archivos **UTF-8 sin BOM** y finales de línea **LF**; evitar mezclar CRLF/LF.  
+- **Espacios invisibles**: eliminar **NBSP** y **ZWSP**; usar espacio ASCII (`U+0020`).  
+- **Guiones**: evitar “–/—”; usar guion ASCII “-”.  
+- **Árboles**: emplear **ARV-Tree-UTF**; si el entorno no soporta Unicode, usar **ARV-Tree-ASCII** (ver 99.20/99.21).
+
+Conclusión de la Sección 99.7
+El combo **Checklist + Anti-Desvíos** asegura bloques completos, consistentes y trazables, con controles tipográficos y técnicos explícitos que previenen desalineaciones y artefactos, **sin pérdida** de información.
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 99.7 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 99.8 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 99.8
+Title: Secciones Madre (X.0) + Reservas Universales (X.1/X.2)
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_22.38 (UTC-3)
+Anchors: sec-99-8-proposito,sec-99-8-alcance,sec-99-8-madre,sec-99-8-reservas,sec-99-8-referencias,sec-99-8-gobernanza,sec-99-8-mono
+
+SECCIÓN 99.8 – SECCIONES MADRE (X.0) + RESERVAS UNIVERSALES (X.1/X.2)
+
+99.8.1 [ANCHOR:sec-99-8-proposito] Propósito
+Estandarizar la **sección madre (X.0)** de cada capítulo y fijar **reservas universales** para **X.1 = Métricas y criterios de aceptación** y **X.2 = Riesgos y mitigaciones**, evitando renumeraciones futuras y facilitando navegación estable.
+
+99.8.2 [ANCHOR:sec-99-8-alcance] Alcance
+Aplica a todas las secciones de primer nivel del Manual (0, 1, 2, …, 99). Rige para nuevas altas, renombres y reorganizaciones internas.
+
+99.8.3 [ANCHOR:sec-99-8-madre] Sección madre (X.0)
+- Subpuntos **fijos** y **obligatorios**:  
+  **X.0.1 Propósito**, **X.0.2 Alcance**, **X.0.3 Resumen de contenidos**, **X.0.4 Orientación de lectura**.  
+- Naturaleza: **no** introduce reglas nuevas ni define campos/tablas; **contextualiza y referencia** el resto de X.*.  
+- Estilo: usar listas de 1–2 líneas por item en **Resumen de contenidos** y referencias claras a X.1, X.2 y X.3+.  
+- Título canónico: `SECCIÓN X.0 – (título madre)`; numeración ISO 2145; **sin** punto final.  
+- Anclas por subpunto con slugs estables: `[ANCHOR:sec-x-0-…]`.
+
+99.8.4 [ANCHOR:sec-99-8-reservas] Reservas universales (X.1 / X.2)
+- **X.1 — Métricas y criterios de aceptación** (**reservada**).  
+- **X.2 — Riesgos y mitigaciones** (**reservada**).  
+- Los **contenidos propios** de cada sección comienzan en **X.3** y siguientes.  
+- Las madres deben **referenciar** explícitamente sus X.1/X.2 (aunque estén “reservadas”) y las X.3+ existentes.
+
+99.8.5 [ANCHOR:sec-99-8-referencias] Referencias cruzadas y alias
+- Mantener referencias cruzadas entre X.0 y sus X.3+ para orientar lectura y operación.  
+- Si se renumeran secciones o subpuntos, mantener **alias temporales** de anclas hasta normalizar todas las referencias internas/externas.  
+- Evitar sinónimos: usar **nombres exactos** de carpetas, columnas, módulos y políticas cuando se mencionen.
+
+99.8.6 [ANCHOR:sec-99-8-gobernanza] Gobernanza y TOC
+- La creación, renombre o baja de cualquier **X.0/X.1/X.2** obliga a **actualizar el TOC** (Front Matter) en el **mismo commit**.  
+- No imprimir evidencias de edición (colores, diffs, marcadores) dentro de los bloques TXT; el control de cambios es visible **solo** en **ARV-PLN-001**.  
+- Mantener **anclas estables**; si se reestructura, publicar alias y notificar en ARV-PLN-001.
+
+99.8.7 [ANCHOR:sec-99-8-mono] Tipografía monoespaciada y normalización técnica (aplicación)
+- Redactar y revisar esta sección (y todas las **X.0/X.1/X.2**) con **tipografía monoespaciada** para preservar alineación en listas y árboles.  
+- Emitir archivos **UTF-8 sin BOM** y **LF**; eliminar NBSP/ZWSP; usar guion ASCII “-” en lugar de “–/—”.  
+- Para árboles/jerarquías, aplicar **ARV-Tree-UTF**; si el entorno no soporta Unicode, usar **ARV-Tree-ASCII** (ver **99.20** y **99.21**).
+
+Conclusión de la Sección 99.8
+El patrón **madre + reservas** estabiliza la numeración, ordena la lectura y evita retrabajos estructurales. Con tipografía monoespaciada y normalización técnica, se garantiza una presentación consistente y legible sin pérdida de información.
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 99.8 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 99.9 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 99.9
+Title: No-Data-Loss + Control de Cambios (visible solo en ARV-PLN-001)
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_22.46 (UTC-3)
+Anchors: sec-99-9-proposito,sec-99-9-alcance,sec-99-9-no-loss,sec-99-9-reemplazo,sec-99-9-compatibilidad,sec-99-9-control-cambios,sec-99-9-publicacion,sec-99-9-mono-codificacion
+
+SECCIÓN 99.9 – NO-DATA-LOSS + CONTROL DE CAMBIOS (VISIBLE SOLO EN ARV-PLN-001)
+
+99.9.1 [ANCHOR:sec-99-9-proposito] Propósito
+Blindar el Manual contra **pérdidas de información** y centralizar la **visibilidad de revisiones** en un único lugar externo al contenido de los bloques.
+
+99.9.2 [ANCHOR:sec-99-9-alcance] Alcance
+Todos los bloques del Manual (0..n; 98..; 99..) y cada cambio editorial/operativo que los afecte durante su ciclo de vida.
+
+99.9.3 [ANCHOR:sec-99-9-no-loss] Doctrina “No-Data-Loss”
+- **Prohibido resumir o contraer** contenido normativo relevante.  
+- Todo lo relevante del RAW se **incluye íntegro** (literal o integrado).  
+- **Reubicación no destructiva**: si algo deja de aplicar, se mueve a subpunto/Anexo/Histórico sin borrarlo.  
+- **Terminología canónica**: utilizar nombres exactos de carpetas, columnas, módulos y políticas (sin sinónimos).
+
+99.9.4 [ANCHOR:sec-99-9-reemplazo] Reemplazo mínimo (edición no destructiva)
+- Modificar **solo** lo estrictamente afectado por el cambio.  
+- Conservar literales del **Golden Set** sin alteraciones (ortografía, tiempos, negaciones).  
+- Mantener listas/tablas **completas** salvo corrección factual demostrada.  
+- Si una regla se refuerza, **agregar** la literal; si se suprime, **trasladar** al histórico (sin eliminar del repositorio).
+
+99.9.5 [ANCHOR:sec-99-9-compatibilidad] Compatibilidad, anclas y TOC
+- Mantener **anclas estables**; ante renumeración, publicar **alias temporales** hasta normalizar todas las referencias.  
+- Actualizar el **TOC** (Front Matter) en el **mismo commit** cuando cambien títulos o numeración.  
+- Evitar enumeraciones no canónicas dentro del bloque: aplicar ISO 2145 (X, X.Y, X.Y.Z, sin punto final).
+
+99.9.6 [ANCHOR:sec-99-9-control-cambios] Control de cambios (único lugar)
+- El historial de revisiones se registra **exclusivamente** en **ARV-PLN-001 – Listado General de Documentos Internos**: versión, fecha, autor, motivo.  
+- **No** imprimir diffs, colores, tachados ni marcas de edición dentro de los bloques TXT.  
+- En cada emisión de bloque: consignar versión **vN** en el micro-encabezado y registrar el cambio en ARV-PLN-001.
+
+99.9.7 [ANCHOR:sec-99-9-publicacion] Publicación, respaldos y espejos
+- Publicación canónica en **TXT**; espejos opcionales: **HTML/Markdown** (ids = slugs de `[ANCHOR:…]`) y **JSON** (claves = numerales ISO 2145).  
+- **PDF** solo con **capa de texto** (legible por máquina).  
+- Mantener **Imagen Actual del Proyecto** con artefactos obligatorios y **backups** consistentes verificados.
+
+99.9.8 [ANCHOR:sec-99-9-mono-codificacion] Tipografía monoespaciada y normalización técnica
+- Redactar y revisar con **tipografía monoespaciada** para preservar alineación de listas/tablas y **árboles** (box-drawing).  
+- Emitir archivos **UTF-8 sin BOM** y finales de línea **LF**.  
+- Eliminar caracteres invisibles: **NBSP (U+00A0)** y **ZWSP (U+200B)**; usar espacio ASCII (`U+0020`).  
+- Evitar guiones tipográficos “–/—”; usar el guion ASCII “-”.  
+- Para jerarquías: aplicar **ARV-Tree-UTF**; si no hay soporte Unicode, usar **ARV-Tree-ASCII** (ver **99.20** y **99.21**).
+
+Conclusión de la Sección 99.9
+Con **No-Data-Loss**, control de cambios centralizado en **ARV-PLN-001** y normalización técnica/typográfica, el Manual se mantiene **íntegro, trazable y legible por máquinas** sin introducir artefactos ni pérdidas de contenido.
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 99.9 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 99.10 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 99.10
+Title: Ritmo de trabajo y reglas de publicación
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_22.55 (UTC-3)
+Anchors: sec-99-10-proposito,sec-99-10-alcance,sec-99-10-ritmo,sec-99-10-publicacion,sec-99-10-cierre,sec-99-10-mono-codificacion
+
+SECCIÓN 99.10 – RITMO DE TRABAJO Y REGLAS DE PUBLICACIÓN
+
+99.10.1 [ANCHOR:sec-99-10-proposito] Propósito
+Establecer un **ritmo operativo** y reglas de publicación que garanticen calidad constante, **No-Data-Loss**, trazabilidad externa y estabilidad de numeración y anclas.
+
+99.10.2 [ANCHOR:sec-99-10-alcance] Alcance
+Todos los bloques y todas las sesiones de trabajo del Manual (0..n; 98..; 99..), incluidas migraciones a nuevos chats y reemisiones de secciones.
+
+99.10.3 [ANCHOR:sec-99-10-ritmo] Ritmo de trabajo
+- **Un (1) bloque por mensaje** para asegurar foco y evitar saturación de contexto.
+- Antes de escribir: **releer** el RAW por URL vigente y ubicar el tramo exacto a reconstruir.
+- Si un bloque crece demasiado, **dividir** en subpuntos o bloques consecutivos **sin pérdida** de contenido (No-Data-Loss).
+- Al detectar límite de contexto: “**Charly, estamos en zona de límite: migrá a un chat nuevo y re-sincronizá.**”
+- Terminología **canónica** siempre (nombres exactos de carpetas, columnas, módulos, políticas).
+
+99.10.4 [ANCHOR:sec-99-10-publicacion] Reglas de publicación
+- **Formato obligatorio**: cartela `ruby`, micro-encabezado completo y en orden, banners **INICIO/FIN**, título “SECCIÓN X.Y – …”, **anclas** en cada subpunto, **Conclusión**.
+- **Numeración**: esquema **ISO 2145** (arábigos con puntos; **sin** punto final en el último nivel; “0” introductorio permitido). :contentReference[oaicite:0]{index=0}
+- **TOC** (Front Matter): actualizar en el **mismo commit** ante altas/renombres/renumeraciones.
+- **Publicación legible por máquina** (cuando aplique): preferir **RAW/HTML estático**; **PDF** solo con **capa de texto**.
+- **Citación visible (RAG)**: si la materia es cambiante o externa, citar fuentes y, cuando aporte precisión, incluir literales breves del **Golden Set**.
+- **Sintaxis controlada**: **permitido** el uso de **doble asterisco** para resaltar referencias internas o literales clave del Manual; **prohibido** iniciar líneas con `#` (encabezado ATX) dentro del BLOQUE TXT, y **prohibidas** numeraciones “1)”, letras o romanos (listas internas con “-”). :contentReference[oaicite:1]{index=1}
+
+99.10.5 [ANCHOR:sec-99-10-cierre] Cierre operativo del bloque
+- Ejecutar **Checklist 99.7** y **Anti-Desvíos 99.7**.
+- Confirmar **No-Data-Loss** (nada resumido ni contraído; reubicación no destructiva si corresponde).
+- Publicar el bloque y **registrar revisión** en **ARV-PLN-001** (historial fuera del contenido).
+
+99.10.6 [ANCHOR:sec-99-10-mono-codificacion] Tipografía monoespaciada y normalización técnica (obligatoria)
+- Redactar y revisar con **tipografía monoespaciada** para conservar alineación en listas/tablas y **árboles** (box-drawing). :contentReference[oaicite:2]{index=2}
+- Codificación y EOL: emitir archivos en **UTF-8 sin BOM** y finales de línea **LF**; evitar mezclar CRLF/LF y eliminar caracteres invisibles (NBSP/ZWSP). La presencia de **BOM** puede causar artefactos al concatenar o al pegar en algunos entornos. :contentReference[oaicite:3]{index=3}
+- Árboles de carpetas/jerarquías: usar **ARV-Tree-UTF** (box-drawing). Si el entorno no soporta Unicode, usar **ARV-Tree-ASCII** (ver **99.20** y **99.21**).
+
+Conclusión de la Sección 99.10
+Con un **ritmo constante** y reglas de publicación **estrictas** (formato canónico, ISO 2145, TOC, RAG cuando aplique, monoespaciada y normalización técnica), cada bloque sale **completo, estable y trazable**, sin comprometer la integridad del Manual.
+
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 99.10 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 99.11 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 99.11
+Title: Política de evidencias y citación (RAG)
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_23.03 (UTC-3)
+Anchors: sec-99-11-proposito,sec-99-11-alcance,sec-99-11-casos,sec-99-11-evidencias,sec-99-11-formato,sec-99-11-granularidad,sec-99-11-literales,sec-99-11-calidad,sec-99-11-espejos,sec-99-11-workflow,sec-99-11-checklist,sec-99-11-riesgos,sec-99-11-conclusion
+
+SECCIÓN 99.11 – POLÍTICA DE EVIDENCIAS Y CITACIÓN (RAG)
+
+99.11.1 [ANCHOR:sec-99-11-proposito] Propósito
+Establecer reglas uniformes para **recolectar, citar y preservar evidencias** cuando el contenido sea **cambiante o externo** al Manual, garantizando trazabilidad y **No-Data-Loss** sin contaminar el BLOQUE TXT con marcas editoriales.
+
+99.11.2 [ANCHOR:sec-99-11-alcance] Alcance
+Aplica a todas las secciones (0..n; 98..; 99..) cuando:  
+- se incorporen **datos normativos/operativos** provenientes de terceros;  
+- se documenten **procedimientos** dependientes de servicios externos;  
+- se hagan referencias a **formatos, estándares o especificaciones** fuera del Manual;  
+- se publiquen espejos **HTML/JSON/PDF** legibles por máquinas.
+
+99.11.3 [ANCHOR:sec-99-11-casos] Casos que **exigen** evidencia/cita visible
+- Normativa, estándares, manuales, APIs o políticas **no propias**.  
+- Fechas, montos, parámetros o requisitos **sujetos a actualización**.  
+- Afirmaciones técnicas que requieran **verificación independiente**.  
+- Tablas/árboles derivados de fuentes externas.
+
+99.11.4 [ANCHOR:sec-99-11-evidencias] Tipos de evidencia admitidos
+- **Fuente primaria** (preferida): documento **RAW/HTML estático** o repositorio oficial.  
+- **Fuente secundaria**: compendios, portales o artículos técnicos cuando no exista primaria disponible.  
+- **Copia de resguardo** (opcional): snapshot/archivo espejo conservado internamente, referenciado desde ARV-PLN-001.  
+- **Cita literal** breve (**Golden Set**) cuando agregue precisión.
+
+99.11.5 [ANCHOR:sec-99-11-formato] Formato de citación (visible fuera del contenido)
+- En el BLOQUE TXT **no** se imprimen notas editoriales ni diffs.  
+- La cita visible se entrega en el **ámbito de publicación** (p. ej., espejo HTML) con:  
+  **(a)** identificador legible (título de la fuente), **(b)** fecha de consulta/emisión, **(c)** URL RAW/estática o referencia a repositorio, **(d)** fragmento literal opcional corto cuando aporte precisión.  
+- Para consumo automatizado (JSON espejo): clave = numeral ISO 2145 del subpunto; valor = {titulo, fecha, url, literal?}.
+
+99.11.6 [ANCHOR:sec-99-11-granularidad] Granularidad de la evidencia
+- Preferir **citas por subpunto** (X.Y.Z) cuando el contenido se apoya en material externo.  
+- Evitar citas globales ambiguas para secciones extensas.  
+- Si varias líneas dependen de la misma fuente, **agrupar** en una única referencia del subpunto.
+
+99.11.7 [ANCHOR:sec-99-11-literales] Uso de literales (Golden Set)
+- Copiar **tal cual** ortografía/tiempos/negaciones cuando la literal sea crítica.  
+- Insertar la literal **dentro** del cuerpo como texto plano (comillas o `>`), **sin** marcas editoriales ni formato tipográfico diferente al del Manual.  
+- **Prohibido** resumir el contenido normativo relevante; si una literal es extensa y excede el foco, **reubicar** el excedente en subpunto/anexo (No-Data-Loss).
+
+99.11.8 [ANCHOR:sec-99-11-calidad] Calidad mínima de fuentes
+- Priorizar **sitios oficiales, documentos estándar, repositorios RAW**, publicaciones con **estabilidad de versión** y trazabilidad.  
+- Descartar fuentes sin **autoridad**, con **cambios frecuentes** sin versionado o sin acceso directo a contenido **texto** (evitar vistas “/view” no-RAW).  
+- Mantener **consistencia de nombres**: sin sinónimos para carpetas/columnas/módulos.
+
+99.11.9 [ANCHOR:sec-99-11-espejos] Espejos y publicación legible por máquinas
+- **HTML/Markdown**: encabezados ATX y `id` = slugs de `[ANCHOR:…]`; las citas visibles se imprimen como lista de **fuentes** por subpunto.  
+- **JSON espejo** (opcional): un objeto por subpunto con metadatos de la evidencia.  
+- **PDF**: publicar solo con **capa de texto**.
+
+99.11.10 [ANCHOR:sec-99-11-workflow] Workflow operativo (RAG) sin ruido en el bloque
+1) **Releer el RAW** del Manual y localizar el subpunto.  
+2) **Recolectar** fuentes (primarias si existen).  
+3) **Extraer** literales (Golden Set) y **redactar** integración **sin resumen**.  
+4) **Emitir** el BLOQUE TXT con forma canónica; **no** imprimir notas de edición/citas dentro del bloque.  
+5) **Publicar** citas visibles en el espejo (HTML/JSON) y registrar el snapshot en **ARV-PLN-001** si aplica.  
+6) **Actualizar** TOC si cambian títulos/numeración; mantener anclas estables/alias temporales si renumeran.
+
+99.11.11 [ANCHOR:sec-99-11-checklist] Checklist de citación antes del cierre
+- ¿Hay contenido **externo/cambiante**? → **Cita visible** preparada en espejo.  
+- ¿La **literal** crítica está **tal cual**?  
+- ¿La **fuente** es **estable** (RAW/HTML estático) y con **texto**?  
+- ¿Se respetó **terminología canónica**?  
+- ¿El **BLOQUE TXT** quedó **sin** `#` al inicio de línea y **sin** marcas editoriales?  
+- ¿JSON espejo (si aplica) mapea por **numeral ISO 2145**?
+
+99.11.12 [ANCHOR:sec-99-11-riesgos] Riesgos y mitigaciones específicos
+- **R-01 Fuentes volátiles** → Usar primarias/versionadas; snapshot en ARV-PLN-001.  
+- **R-02 Cita “pegada” dentro del bloque** → Mover a espejo; mantener el bloque limpio.  
+- **R-03 Parafraseo de literales** → Reponer **texto literal** (Golden Set).  
+- **R-04 Vistas no-RAW / PDFs sin texto** → Sustituir por RAW/HTML estático / PDF con texto.  
+- **R-05 Pérdida de trazabilidad** → JSON espejo por subpunto y alias de anclas si renumeran.
+
+99.11.13 [ANCHOR:sec-99-11-conclusion] Conclusión de la Sección 99.11
+La política fija **cuándo** y **cómo** citar sin introducir ruido en los bloques: evidencia sólida, literales **tal cual**, publicación legible por máquinas y control centralizado de snapshots; todo con **No-Data-Loss**, numeración ISO 2145 y sintaxis canónica del Manual.
+
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 99.11 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 99.12 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 99.12
+Title: Plantillas mínimas (encabezado maestro, micro-encabezado y moldes X.Y / X.0)
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_23.12 (UTC-3)
+Anchors: sec-99-12-proposito,sec-99-12-alcance,sec-99-12-encabezado-maestro,sec-99-12-micro-encabezado,sec-99-12-molde-operativa,sec-99-12-molde-madre,sec-99-12-uso,sec-99-12-validacion,sec-99-12-mono-codificacion
+
+SECCIÓN 99.12 – PLANTILLAS MÍNIMAS (ENCABEZADO MAESTRO, MICRO-ENCABEZADO Y MOLDES X.Y / X.0)
+
+99.12.1 [ANCHOR:sec-99-12-proposito] Propósito
+Proveer **plantillas mínimas listas para pegar** que garanticen uniformidad y cumplimiento formal del Manual, sin depender de herramientas externas ni de formatos ricos.
+
+99.12.2 [ANCHOR:sec-99-12-alcance] Alcance
+Aplica a **todo bloque TXT** del Manual (0..n; 98..; 99..), tanto para nuevas emisiones como para reescrituras. Estas plantillas **no** reemplazan 99.6 (Plantillas y Encabezados), sino que la **operativizan** con versiones “mínimas”.
+
+99.12.3 [ANCHOR:sec-99-12-encabezado-maestro] Plantilla mínima — Encabezado maestro (al inicio del Manual)
+DocCode: ARV-MAN-001  
+DocTitle: Manual Maestro ArVerifica  
+Version: vN  
+Timestamp: YYYY-MM-DDTHH:MM:SS-03:00  
+Owner: ArVerifica  
+Scope: Normativa y sistema de gestión  
+(El **control de cambios** se registra solo en ARV-PLN-001; sin marcas de edición dentro del documento.)
+
+99.12.4 [ANCHOR:sec-99-12-micro-encabezado] Plantilla mínima — Micro-encabezado por bloque (orden exacto)
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===  
+Version: vN  
+Section: X.Y  
+Title: (título exacto)  
+DocCode: ARV-MAN-001  
+Timestamp: YYYY-MM-DD_HH.MM (UTC-3)  
+Anchors: sec-x-y-proposito,sec-x-y-alcance,sec-x-y-a,sec-x-y-b,...
+
+99.12.5 [ANCHOR:sec-99-12-molde-operativa] Plantilla mínima — Sección operativa (X.Y)
+SECCIÓN X.Y – (título exacto)
+
+X.Y.1 [ANCHOR:sec-x-y-proposito] Propósito  
+(Qué resuelve para el lector/operación; incluir literales cuando aporten.)
+
+X.Y.2 [ANCHOR:sec-x-y-alcance] Alcance  
+(Artefactos, procesos y equipos a los que aplica.)
+
+X.Y.3 [ANCHOR:sec-x-y-a] (subtítulo)  
+(Requisitos, pasos, listas de columnas/subcarpetas, reglas críticas, métricas/controles.)
+
+X.Y.4 [ANCHOR:sec-x-y-b] (subtítulo)  
+(Continuación de operativa; agregar X.Y.5+ si es necesario.)
+
+Conclusión de la Sección X.Y  
+(1–2 líneas de síntesis operativa.)
+
+99.12.6 [ANCHOR:sec-99-12-molde-madre] Plantilla mínima — Sección madre (X.0)
+SECCIÓN X.0 – (título madre)
+
+X.0.1 [ANCHOR:sec-x-0-proposito] Propósito  
+(Enmarca objetivos, dependencias y resultados verificables.)
+
+X.0.2 [ANCHOR:sec-x-0-alcance] Alcance  
+(Qué cubre la sección X; referencias a artefactos clave.)
+
+X.0.3 [ANCHOR:sec-x-0-contenidos] Resumen de contenidos  
+(Lista breve de X.3+ con 1–2 líneas por item.)
+
+X.0.4 [ANCHOR:sec-x-0-lectura] Orientación de lectura  
+(Pasos sugeridos para aplicar la sección.)
+
+(Recordatorio: **Reservas universales** X.1 = Métricas y X.2 = Riesgos; los contenidos propios empiezan en **X.3**.)
+
+99.12.7 [ANCHOR:sec-99-12-uso] Reglas de uso de las plantillas mínimas
+- **No-Data-Loss**: las plantillas son un **esqueleto**; el contenido del RAW debe incorporarse íntegro (literal o integrado).  
+- **Numeración ISO 2145**: X, X.Y, X.Y.Z, **sin** punto final; admitir “0” como introductorio.  
+- **Anclas**: cada subpunto con `[ANCHOR:sec-x-y-…]` coherente con su numeral.  
+- **Sintaxis**: **permitido** el uso de **doble asterisco** para resaltar referencias internas o literales clave del Manual; **prohibido** iniciar líneas con `#` (encabezado ATX) y **prohibidas** numeraciones “1)”, letras o romanos (listas internas con “-”).  
+- **TOC** (Front Matter): actualizar en el **mismo commit** ante cambios de título/numeración.
+
+99.12.8 [ANCHOR:sec-99-12-validacion] Validación previa al cierre (check mínimo)
+- Banners **INICIO/FIN** y **cartela `ruby`** presentes.  
+- Micro-encabezado **completo y en orden** (99.12.4).  
+- Título **SECCIÓN X.Y – …** y **Conclusión** incluidos.  
+- Anclas por subpunto y **slugs estables**.  
+- **No-Resumen** verificado; literales **tal cual** cuando aporten precisión.  
+- **TOC** actualizado si se alteró título/numeración.
+
+99.12.9 [ANCHOR:sec-99-12-mono-codificacion] Tipografía y normalización técnica (aplicación obligatoria)
+- Redactar/revisar con **tipografía monoespaciada** (alineación segura en listas/tablas y **árboles**).  
+- Emitir archivos **UTF-8 sin BOM** y finales de línea **LF**; eliminar NBSP/ZWSP; usar guion ASCII “-” en lugar de “–/—”.  
+- Para jerarquías, usar **ARV-Tree-UTF** (box-drawing) o **ARV-Tree-ASCII** si el entorno no soporta Unicode (ver 99.20/99.21).
+
+Conclusión de la Sección 99.12
+Las **plantillas mínimas** permiten emitir bloques consistentes y legibles por máquinas en minutos, manteniendo ISO 2145, sintaxis canónica, **monoespaciada**, normalización técnica y la doctrina **No-Data-Loss**.
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 99.12 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 99.13 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 99.13
+Title: Secciones madre (X.0): definición, estructura, reservas y buenas prácticas
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_23.20 (UTC-3)
+Anchors: sec-99-13-proposito,sec-99-13-alcance,sec-99-13-definicion,sec-99-13-estructura,sec-99-13-reservas,sec-99-13-referencias,sec-99-13-buenas,sec-99-13-ejemplos,sec-99-13-validacion,sec-99-13-toc,sec-99-13-mono,sec-99-13-conclusion
+
+SECCIÓN 99.13 – SECCIONES MADRE (X.0): DEFINICIÓN, ESTRUCTURA, RESERVAS Y BUENAS PRÁCTICAS
+
+99.13.1 [ANCHOR:sec-99-13-proposito] Propósito
+Estandarizar la **sección madre (X.0)** de cada capítulo para asegurar contexto mínimo, previsibilidad de lectura y estabilidad de numeración/anclas, sin introducir reglas nuevas ni material operativo dentro de X.0.
+
+99.13.2 [ANCHOR:sec-99-13-alcance] Alcance
+Aplica a **todas** las secciones de primer nivel (0, 1, 2, …, 99). Rige para **altas**, **renombres** y **reestructuraciones** de capítulos, y para su referencia cruzada desde otras secciones.
+
+99.13.3 [ANCHOR:sec-99-13-definicion] Definición de “sección madre (X.0)”
+- Es la **portada técnica** del capítulo X: contextualiza, delimita alcance y orienta la lectura.  
+- **No** define campos, tablas ni reglas operativas propias del tema (eso inicia en **X.3**).  
+- **Conecta** con sus reservas **X.1/X.2** y con el contenido operativo **X.3+**.
+
+99.13.4 [ANCHOR:sec-99-13-estructura] Estructura **obligatoria** de X.0
+- **X.0.1 Propósito** — qué resuelve esta sección para el lector/operación.  
+- **X.0.2 Alcance** — artefactos, procesos y equipos cubiertos.  
+- **X.0.3 Resumen de contenidos** — lista de **X.3+** con 1–2 líneas por ítem.  
+- **X.0.4 Orientación de lectura** — orden sugerido de consulta/aplicación.  
+- **Conclusión de la Sección X.0** — cierre breve (1–2 líneas).
+
+99.13.5 [ANCHOR:sec-99-13-reservas] Reservas universales bajo X (recordatorio)
+- **X.1 — Métricas y criterios de aceptación** (**reservada**).  
+- **X.2 — Riesgos y mitigaciones** (**reservada**).  
+- Los contenidos propios **comienzan en X.3**. La madre debe **mencionar** X.1/X.2 aunque estén reservadas.
+
+99.13.6 [ANCHOR:sec-99-13-referencias] Referencias cruzadas y anclas
+- Cada subpunto de X.0 expone su **[ANCHOR:sec-x-0-…]** con slug estable.  
+- La madre **enlaza** nominalmente a X.1/X.2 y a X.3+, manteniendo **nombres exactos** (sin sinónimos) de artefactos (carpetas, columnas, módulos).  
+- Si hay renumeración, mantener **alias temporales** hasta normalizar todas las referencias.
+
+99.13.7 [ANCHOR:sec-99-13-buenas] Buenas prácticas editoriales en X.0
+- Mantener **tono descriptivo** y **contenido mínimo necesario** (sin reglas nuevas).  
+- Usar **listas** para Resumen y Orientación (claridad y escaneo rápido).  
+- Respetar **ISO 2145** (arábigos con puntos; **sin** punto final) y el título `SECCIÓN X.0 – …`.  
+- **Prohibido** iniciar líneas con `#` dentro del BLOQUE TXT; **permitido** el uso de **doble asterisco** para referencias internas o literales clave del Manual.  
+- Actualizar **TOC (Front Matter)** en el **mismo commit** ante cambios de títulos/numeración.
+
+99.13.8 [ANCHOR:sec-99-13-ejemplos] Ejemplos de redacción (molde mínimo)
+- **Resumen de contenidos (X.0.3)**  
+  - **X.3**: [título exacto] — 1–2 líneas que indiquen qué abarca.  
+  - **X.4**: [título exacto] — 1–2 líneas…  
+- **Orientación de lectura (X.0.4)**  
+  - Leer **X.3** para preparar…  
+  - Aplicar **X.4** para ejecutar…  
+  - Consultar **X.1/X.2** para métricas y riesgos transversales.
+
+99.13.9 [ANCHOR:sec-99-13-validacion] Validación de forma antes del cierre
+- Banners **INICIO/FIN** y **cartela `ruby`** presentes.  
+- Micro-encabezado completo y en orden.  
+- Subpuntos **X.0.1..X.0.4** y **Conclusión** incluidos.  
+- **Anclas** por subpunto y slugs coherentes.  
+- **Sin** `#` al inicio de línea; **sí** a **doble asterisco** cuando corresponda.  
+- **TOC** actualizado si cambió algo en títulos/numeración.
+
+99.13.10 [ANCHOR:sec-99-13-toc] Reglas de TOC y gobierno
+- La creación, renombre o baja de **X.0/X.1/X.2** obliga a **actualizar TOC** en el mismo commit.  
+- El **control de cambios** se registra solo en **ARV-PLN-001** (no imprimir evidencias dentro del bloque).
+
+99.13.11 [ANCHOR:sec-99-13-mono] Tipografía monoespaciada y normalización técnica
+- Redactar y revisar con **tipografía monoespaciada** (alineación estable en listas y **árboles**).  
+- Emitir en **UTF-8 sin BOM** y finales de línea **LF**; eliminar NBSP/ZWSP y guiones tipográficos (–/—), usando espacio normal y el guion ASCII “-”.  
+- Para árboles/jerarquías, usar **ARV-Tree-UTF** (box-drawing) o **ARV-Tree-ASCII** si no hay soporte Unicode (ver 99.20/99.21).
+
+99.13.12 [ANCHOR:sec-99-13-conclusion] Conclusión de la Sección 99.13
+El patrón **madre + reservas** estandariza el arranque de cada capítulo, ordena la lectura y mantiene **numeración/anclas estables**; con sintaxis canónica, **monoespaciada** y normalización técnica se evitan desvíos sin sacrificar **No-Data-Loss**.
+
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 99.13 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 99.14 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 99.14
+Title: Reservas universales (X.1/X.2): Métricas y Riesgos
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_23.29 (UTC-3)
+Anchors: sec-99-14-proposito,sec-99-14-alcance,sec-99-14-definicion,sec-99-14-metricas,sec-99-14-riesgos,sec-99-14-operativa,sec-99-14-toc,sec-99-14-sintaxis,sec-99-14-mono,sec-99-14-conclusion
+
+SECCIÓN 99.14 – RESERVAS UNIVERSALES (X.1/X.2): MÉTRICAS Y RIESGOS
+
+99.14.1 [ANCHOR:sec-99-14-proposito] Propósito
+Estandarizar el uso de las **Reservas universales** bajo cada capítulo X:  
+- **X.1 = Métricas y criterios de aceptación (reservada)**.  
+- **X.2 = Riesgos y mitigaciones (reservada)**.  
+Con ello se asegura una **estructura predecible**, estabilidad de numeración y disponibilidad de controles transversales.
+
+99.14.2 [ANCHOR:sec-99-14-alcance] Alcance
+Aplica a **todas** las secciones de primer nivel (0, 1, 2, …, 99). Las reservas deben existir aun cuando el capítulo no tenga contenidos operativos publicados (X.3+).
+
+99.14.3 [ANCHOR:sec-99-14-definicion] Definición y reglas generales
+- **Existencia obligatoria** de X.1 y X.2 en cada X, con títulos canónicos.  
+- **Naturaleza**: contienen indicadores y controles transversales del capítulo; **no** duplican contenido operativo de X.3+.  
+- **Estabilidad**: sus títulos, numerales y anclas deben mantenerse estables; si hay renumeración, publicar **alias temporales**.  
+- **Referencia**: la **sección madre (X.0)** debe mencionarlas explícitamente.
+
+99.14.4 [ANCHOR:sec-99-14-metricas] Contenidos esperados en X.1 — Métricas y criterios de aceptación
+- **Métricas de forma**: banners, cartela `ruby`, micro-encabezado completo y ordenado, título “SECCIÓN X.Y – …”, anclas por subpunto, conclusión; numeración ISO 2145 (**sin punto final**).  
+- **Métricas de contenido**: **No-Data-Loss** (sin contracción); uso de **literales** cuando aporten precisión; listas/tablas textuales completas (requisitos, pasos, columnas, subcarpetas).  
+- **Trazabilidad**: TOC actualizado en el **mismo commit**; anclas estables/alias temporales si renumeran; control de cambios en **ARV-PLN-001**.  
+- **Legibilidad por máquina** (cuando aplique): RAW/HTML estático; PDF con capa de texto; espejo JSON opcional (claves = numerales).  
+- **Calidad editorial**: claridad, cohesión (Propósito → Alcance → Operativa → Conclusión) y terminología canónica.
+
+99.14.5 [ANCHOR:sec-99-14-riesgos] Contenidos esperados en X.2 — Riesgos y mitigaciones
+- **Catálogo mínimo**: contracción de contenido; pérdida de literales; numeración/anclas inestables; TOC desactualizado; publicación no legible por máquina; evidencias sin cita; dispersión de formato; ruido editorial; saturación de sesión; terminología no canónica.  
+- **Controles**: No-Data-Loss; cartela y forma canónica; numeración ISO 2145 + anclas estables; TOC en mismo commit; publicación en RAW/HTML estático y PDF con texto; citación visible cuando aplique; control de cambios fuera del bloque; sincronización y releída del RAW; terminología exacta.  
+- **Escalamiento**: si un riesgo persiste, retirar aprobación y reemitir versión corregida (registrar en **ARV-PLN-001**).
+
+99.14.6 [ANCHOR:sec-99-14-operativa] Operativa de creación/actualización de reservas
+- Al crear un capítulo X nuevo, **emitir** X.0, **crear** X.1 y X.2 (aunque queden “reservadas”) y **comenzar** contenidos propios en **X.3**.  
+- Cuando cambien métricas o riesgos transversales del capítulo, **actualizar** X.1/X.2 y **no** diseminar reglas en subpuntos operativos (evita duplicidad).
+
+99.14.7 [ANCHOR:sec-99-14-toc] Reglas de TOC y gobierno
+- Alta/renombre/baja de X.0/X.1/X.2 ⇒ **actualizar TOC** (Front Matter) en el **mismo commit**.  
+- **Control de cambios** visible solo en **ARV-PLN-001**; no imprimir evidencias dentro del BLOQUE TXT.
+
+99.14.8 [ANCHOR:sec-99-14-sintaxis] Sintaxis y enumeración canónica
+- **Permitido**: uso de **doble asterisco** para referencias internas o literales clave del Manual.  
+- **Prohibido**: iniciar líneas con `#` (encabezado ATX) dentro del BLOQUE TXT; enumeraciones “1)”, letras o romanos en el cuerpo (listas internas con “-”).  
+- **Numeración**: seguir **ISO 2145** (X, X.Y, X.Y.Z, …; **sin** punto final); “0” introductorio permitido.
+
+99.14.9 [ANCHOR:sec-99-14-mono] Tipografía monoespaciada y normalización técnica
+- Redactar y verificar con **tipografía monoespaciada** (alineación estable de listas/tablas y **árboles**).  
+- Emitir archivos **UTF-8 sin BOM** y finales de línea **LF**; eliminar NBSP/ZWSP; usar guion ASCII “-”.  
+- Árboles/jerarquías: **ARV-Tree-UTF** (box-drawing) o **ARV-Tree-ASCII** si el entorno no soporta Unicode (ver 99.20/99.21).
+
+99.14.10 [ANCHOR:sec-99-14-conclusion] Conclusión de la Sección 99.14
+Las **Reservas universales** garantizan que cada capítulo X cuente con **métricas** y **controles de riesgo** estables y localizables, evitando renumeraciones futuras y dispersión normativa, con sintaxis canónica y **No-Data-Loss**.
+
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 99.14 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 99.15 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 99.15
+Title: Doctrina “No-Data-Loss” (sin contracción; edición no destructiva)
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_23.37 (UTC-3)
+Anchors: sec-99-15-proposito,sec-99-15-alcance,sec-99-15-principios,sec-99-15-aplicacion,sec-99-15-reubicacion,sec-99-15-literales,sec-99-15-listas,sec-99-15-ejemplos,sec-99-15-antipatrones,sec-99-15-check,sec-99-15-mono,sec-99-15-conclusion
+
+SECCIÓN 99.15 – DOCTRINA “NO-DATA-LOSS” (SIN CONTRACCIÓN; EDICIÓN NO DESTRUCTIVA)
+
+99.15.1 [ANCHOR:sec-99-15-proposito] Propósito
+Blindar el Manual frente a pérdidas de información durante la escritura, reescritura y mantenimiento, garantizando que todo el contenido relevante del RAW quede incorporado **sin contracción** y que cualquier cambio sea **no destructivo**.
+
+99.15.2 [ANCHOR:sec-99-15-alcance] Alcance
+Aplica a **todos** los bloques del Manual (0..n; 98..; 99..), a sus reemisiones parciales o totales y a los espejos de publicación (HTML/JSON/PDF con texto).
+
+99.15.3 [ANCHOR:sec-99-15-principios] Principios de No-Data-Loss
+- **P-01 Prohibición de resumen**: no se contrae materia normativa u operativa relevante.  
+- **P-02 Inclusión íntegra**: todo lo relevante del RAW se incluye **literal o integrado**.  
+- **P-03 Reemplazo mínimo**: solo se cambia lo estrictamente afectado por la modificación.  
+- **P-04 Reubicación no destructiva**: lo que deja de aplicar se **mueve** (no se borra).  
+- **P-05 Terminología canónica**: nombres exactos (carpetas, columnas, módulos, políticas).  
+- **P-06 Anclas estables**: mantener slugs; alias temporales si hay renumeración.  
+- **P-07 Trazabilidad**: control de cambios visible solo en **ARV-PLN-001**.
+
+99.15.4 [ANCHOR:sec-99-15-aplicacion] Aplicación práctica en la redacción
+- Incorporar **literales** del RAW cuando agreguen precisión (comillas o bloque `>` en texto plano).  
+- Convertir tablas/árboles a **listas textuales** o árboles monoespaciados manteniendo **todas** las columnas/ramas.  
+- Documentar requisitos/pasos **completos**; si son extensos, dividir en subpuntos (X.Y.3, X.Y.4, …) sin omitir contenido.  
+- Cuando haya colisiones entre contenido antiguo y nuevo, **integrar** ambos hasta que el cambio quede resuelto y trazado.
+
+99.15.5 [ANCHOR:sec-99-15-reubicacion] Reubicación no destructiva (reglas)
+- Si una regla/procedimiento deja de aplicar al subpunto actual, **mover** a:  
+  **a)** subpunto “Histórico/Notas” dentro de la misma sección, o  
+  **b)** Anexo específico referenciado desde la sección.  
+- Mantener **referencia cruzada** y fecha de vigencia en ARV-PLN-001 (no dentro del bloque).  
+- **Nunca** eliminar contenido relevante del repositorio sin una ubicación de reemplazo.
+
+99.15.6 [ANCHOR:sec-99-15-literales] Literales (Golden Set)
+- Copiar **tal cual**: ortografía, tiempos y negaciones.  
+- Identificar literales críticas y colocarlas donde aporten máxima claridad.  
+- Ante cambios posteriores, **preservar** la literal original en histórico/subpunto de contexto.
+
+99.15.7 [ANCHOR:sec-99-15-listas] Listas, tablas y árboles en texto plano
+- Tablas: expresar columnas con listas estructuradas; **no** omitir campos.  
+- Árboles: usar **ARV-Tree-UTF** (box-drawing) o **ARV-Tree-ASCII** si el entorno no soporta Unicode (ver 99.20/99.21).  
+- Mantener **alineación monoespaciada** y entradas completas por nodo/columna.
+
+99.15.8 [ANCHOR:sec-99-15-ejemplos] Ejemplos operativos
+- **Cambio de nombre de carpeta**: conservar el nombre anterior en histórico y usar **alias de ancla** hasta normalizar todas las referencias.  
+- **Nueva columna obligatoria**: agregarla en la lista **sin eliminar** las preexistentes; si se depreca una, **reubicar** con nota en ARV-PLN-001.  
+- **Regla reemplazada**: insertar la regla nueva y **trasladar** la anterior al histórico, con referencia cruzada.
+
+99.15.9 [ANCHOR:sec-99-15-antipatrones] Antipatrones (prohibidos)
+- **A-01** Resumir “lo importante” dejando fuera detalles normativos.  
+- **A-02** Parafrasear literales que cambien el sentido.  
+- **A-03** Eliminar columnas/campos “porque no se usan”.  
+- **A-04** Renumerar/anclar sin publicar **alias temporales**.  
+- **A-05** Esconder el control de cambios dentro del bloque.
+
+99.15.10 [ANCHOR:sec-99-15-check] Chequeo previo al cierre (No-Data-Loss)
+- ¿Se incluyó todo lo relevante del RAW (literal o integrado)?  
+- ¿Hay literales críticas **tal cual**?  
+- ¿Listas/tablas/árboles están **completos**?  
+- ¿Se reubicó, en vez de borrar, lo que dejó de aplicar?  
+- ¿Se mantuvieron anclas estables/alias temporales?  
+- ¿El control de cambios quedó en **ARV-PLN-001**?
+
+99.15.11 [ANCHOR:sec-99-15-mono] Requisito tipográfico y técnico
+- Redactar y revisar con **tipografía monoespaciada**; emitir archivos **UTF-8 sin BOM** y finales de línea **LF**.  
+- Eliminar **NBSP/ZWSP** y guiones tipográficos (–/—); usar espacio normal y el guion ASCII “-”.  
+- Para árboles/jerarquías, aplicar **ARV-Tree-UTF** o **ARV-Tree-ASCII** según soporte.
+
+Conclusión de la Sección 99.15
+La doctrina **No-Data-Loss** asegura que las reescrituras **no pierdan** contenido: se integra lo nuevo, se reubica lo que cambia y se preserva la trazabilidad (anclas/TOC estables y control de cambios en ARV-PLN-001).
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 99.15 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 99.16 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 99.16
+Title: Control de cambios (visible solo en ARV-PLN-001)
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_23.45 (UTC-3)
+Anchors: sec-99-16-proposito,sec-99-16-alcance,sec-99-16-politica,sec-99-16-procedimiento,sec-99-16-versionado,sec-99-16-toc-anclas,sec-99-16-evidencias,sec-99-16-normalizacion,sec-99-16-check,sec-99-16-conclusion
+
+SECCIÓN 99.16 – CONTROL DE CAMBIOS (VISIBLE SOLO EN ARV-PLN-001)
+
+99.16.1 [ANCHOR:sec-99-16-proposito] Propósito
+Centralizar el **control de cambios** del Manual en un único soporte externo al contenido (ARV-PLN-001 – Listado General de Documentos Internos), evitando marcas editoriales dentro de los bloques y garantizando trazabilidad.
+
+99.16.2 [ANCHOR:sec-99-16-alcance] Alcance
+Aplica a **todas** las secciones del Manual (0..n; 98..; 99..) y a cada reemisión parcial o total. Incluye altas, bajas, renombres, renumeraciones y ajustes de anclas/TOC.
+
+99.16.3 [ANCHOR:sec-99-16-politica] Política general
+- El **historial de revisiones** se registra **exclusivamente** en **ARV-PLN-001** (versión, fecha, autor, motivo y alcance del cambio).  
+- Dentro de los bloques TXT queda **prohibido** imprimir diffs, tachados, colores o “notas de edición”.  
+- Cada bloque debe incluir su **Version: vN** en el micro-encabezado (incremental y coherente con ARV-PLN-001).
+
+99.16.4 [ANCHOR:sec-99-16-procedimiento] Procedimiento operativo
+1) Redactar/Reescribir el bloque cumpliendo **No-Data-Loss** y forma canónica.  
+2) **Actualizar TOC** (Front Matter) si se modifican títulos o numeración (**mismo commit**).  
+3) Mantener **anclas estables**; si hay cambios, publicar **alias temporales** hasta normalizar todas las referencias.  
+4) Registrar en **ARV-PLN-001**: versión, fecha, autor, motivo, secciones afectadas, impacto en TOC/anclas.  
+5) Publicar espejos (si aplica) y verificar lectura por máquinas (HTML/JSON/PDF con texto).
+
+99.16.5 [ANCHOR:sec-99-16-versionado] Versionado y compatibilidad
+- **vN** aumenta de forma **monotónica** por bloque emitido.  
+- Cambios que **rompen compatibilidad** (renumeración mayor, reestructuras) requieren:  
+  **a)** alias de anclas; **b)** nota de impacto en ARV-PLN-001; **c)** actualización inmediata del TOC.  
+- Cambios **no rompientes** (correcciones menores) mantienen anclas y solo actualizan vN y ARV-PLN-001.
+
+99.16.6 [ANCHOR:sec-99-16-toc-anclas] TOC y anclas (reglas de estabilidad)
+- Numeración **ISO 2145**: X, X.Y, X.Y.Z… (**sin** punto final) con posibilidad de “0” introductorio.  
+- El TOC se edita **siempre** en el **Front Matter** y se sincroniza con los títulos/sections del bloque en el **mismo commit**.  
+- Las anclas `[ANCHOR:sec-x-y-…]` deben reflejar el numeral; ante renumeración, mantener **alias** hasta completar la migración.
+
+99.16.7 [ANCHOR:sec-99-16-evidencias] Evidencias de cambio y publicación
+- El **detalle** del cambio (justificación, tickets, snapshots, fuentes RAG) se conserva fuera del bloque (ARV-PLN-001 y/o espejos).  
+- En materia **cambiante/externa**, las **citas visibles** se publican en el espejo (HTML/JSON), **no** en el BLOQUE TXT.  
+- Para **PDF**, asegurar **capa de texto** (legible por máquinas).
+
+99.16.8 [ANCHOR:sec-99-16-normalizacion] Normalización técnica y tipografía
+- Emitir archivos en **UTF-8 sin BOM** y finales de línea **LF**; evitar mezcla CRLF/LF.  
+- Eliminar NBSP/ZWSP y guiones tipográficos (–/—); usar espacio normal y el guion ASCII “-”.  
+- Redactar y revisar con **tipografía monoespaciada** para preservar alineación en listas/tablas y árboles.
+
+99.16.9 [ANCHOR:sec-99-16-check] Checklist de cierre (Control de cambios)
+- **Version: vN** actualizado en el micro-encabezado.  
+- **TOC** sincronizado (si hubo cambios).  
+- **Anclas** estables o con **alias** publicados cuando corresponda.  
+- Registro completo en **ARV-PLN-001** (fecha, autor, motivo, alcance).  
+- Espejos/recursos legibles por máquinas verificados.  
+- Confirmación **No-Data-Loss**.
+
+99.16.10 [ANCHOR:sec-99-16-conclusion] Conclusión de la Sección 99.16
+Con el **control de cambios** centralizado en **ARV-PLN-001**, TOC/anclas estables y normalización técnica, el Manual mantiene **trazabilidad**, **compatibilidad** y **legibilidad por máquinas** sin introducir ruido editorial dentro de los bloques.
+
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 99.16 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 99.17 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 99.17
+Title: Chequeo anti-desvíos (profundizado): reglas críticas, nombres exactos y TOC
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_23.54 (UTC-3)
+Anchors: sec-99-17-proposito,sec-99-17-alcance,sec-99-17-desvios,sec-99-17-controles,sec-99-17-procedimiento,sec-99-17-matriz,sec-99-17-remediacion,sec-99-17-ejemplos,sec-99-17-check,sec-99-17-mono
+
+SECCIÓN 99.17 – CHEQUEO ANTI-DESVÍOS (PROFUNDIZADO): REGLAS CRÍTICAS, NOMBRES EXACTOS Y TOC
+
+99.17.1 [ANCHOR:sec-99-17-proposito] Propósito
+Establecer un **método exhaustivo** de detección y corrección de desvíos antes del cierre de cada bloque, con foco en: **forma canónica**, **No-Data-Loss**, **terminología exacta**, **numeración ISO 2145**, **anclas estables** y **TOC** sincronizado.
+
+99.17.2 [ANCHOR:sec-99-17-alcance] Alcance
+Se aplica a **todos los bloques** (0..n; 98..; 99..) y a sus espejos (HTML/JSON/PDF con texto). Complementa el checklist de 99.7 y las reservas 99.1/99.2, **sin** reemplazarlas.
+
+99.17.3 [ANCHOR:sec-99-17-desvios] Desvíos típicos a detectar
+- **F-01 Forma**: banners ausentes; cartela `ruby` incompleta; micro-encabezado desordenado.  
+- **N-01 Numeración**: esquema distinto a ISO 2145; punto final tras el último nivel; ausencia de “0” cuando es madre.  
+- **S-01 Sintaxis**: líneas iniciadas con `#`; numeraciones “1)”, “a)”, romanos; uso de marcas no permitidas.  
+- **A-01 Anclas**: faltantes, mal formadas o no coinciden con el numeral.  
+- **T-01 Terminología**: sinónimos/abreviaturas no canónicas para carpetas, columnas, módulos, políticas.  
+- **C-01 Contenido**: resumen/contracción; literales (Golden Set) parafraseadas u omitidas.  
+- **L-01 Listas/Árboles**: columnas o nodos omitidos; árboles sin alineación; uso de fuente no monoespaciada.  
+- **P-01 Publicación**: citar materia cambiante dentro del bloque en lugar de espejo; uso de vistas “/view”; PDF sin capa de texto.  
+- **G-01 Gobierno**: TOC no actualizado; control de cambios impreso dentro del bloque.
+
+99.17.4 [ANCHOR:sec-99-17-controles] Controles de conformidad (cómo se prueba)
+- **CF-Forma**: verificar banners **INICIO/FIN**; cartela `ruby`; micro-encabezado completo y ordenado.  
+- **CF-Numeración**: confirmar ISO 2145 (X, X.Y, X.Y.Z, **sin** punto final) y uso de **X.0** para madres.  
+- **CF-Sintaxis**: **prohibido** `#` al inicio de línea; listas internas con “-”; **permitido** solo **doble asterisco** para resaltar referencias internas o literales clave del Manual.  
+- **CF-Anclas**: cada subpunto con `[ANCHOR:sec-x-y-…]` coherente con el numeral; alias temporales si renumeran.  
+- **CF-Terminología**: cotejar con artefactos reales; **nombres exactos** (sin sinónimos).  
+- **CF-Contenido**: confirmar **No-Data-Loss**; insertar literales críticas **tal cual**; reubicar excedentes sin borrar.  
+- **CF-Listas/Árboles**: columnas y nodos **completos**; **ARV-Tree-UTF** o **ARV-Tree-ASCII** según soporte; revisar alineación.  
+- **CF-Publicación**: evidencias/citas visibles **en espejo** (HTML/JSON); PDF con capa de texto; evitar “/view”.  
+- **CF-Gobierno**: **TOC** actualizado en el **mismo commit**; control de cambios en **ARV-PLN-001**.
+
+99.17.5 [ANCHOR:sec-99-17-procedimiento] Procedimiento de auditoría (paso a paso)
+1) **Releer** el RAW y localizar tramo exacto.  
+2) Ejecutar **CF-Forma** → **CF-Numeración** → **CF-Sintaxis**.  
+3) Verificar **CF-Anclas** y **CF-Terminología** (contra artefactos).  
+4) Aplicar **CF-Contenido** y **CF-Listas/Árboles** (completitud).  
+5) Validar **CF-Publicación** (citas/espejos) y **CF-Gobierno** (TOC/ARV-PLN-001).  
+6) Si hay desvíos, documentar en **Matriz de Hallazgos** y corregir antes del cierre.
+
+99.17.6 [ANCHOR:sec-99-17-matriz] Matriz de hallazgos (formato mínimo)
+- **ID** · **Tipo** (F/N/S/A/T/C/L/P/G) · **Descripción** · **Evidencia** (línea/subpunto) · **Severidad** (Alta/Media/Baja) · **Acción** · **Responsable** · **Estado** (Abierto/Cerrado) · **Fecha**.  
+- Mantener la matriz **fuera** del bloque (ARV-PLN-001 o tablero), sin imprimir marcas de edición en el BLOQUE TXT.
+
+99.17.7 [ANCHOR:sec-99-17-remediacion] Remediación estándar
+- **Forma/Sintaxis**: restaurar cartela y orden; eliminar `#`; reemplazar numeraciones no ISO por listas con “-”.  
+- **Numeración/Anclas**: ajustar numerales; publicar **alias** si renumeran; sincronizar **TOC**.  
+- **Terminología**: sustituir sinónimos por **nombres exactos**.  
+- **Contenido**: reponer literales; integrar material omitido; **reubicar** en subpuntos/anexos sin borrar.  
+- **Listas/Árboles**: completar columnas/nodos; aplicar **ARV-Tree-UTF/ASCII** con tipografía **monoespaciada**.  
+- **Publicación/Gobierno**: mover citas a espejo; garantizar PDF con texto; registrar cambios en **ARV-PLN-001**.
+
+99.17.8 [ANCHOR:sec-99-17-ejemplos] Ejemplos de desvío y su corrección
+- **Caso N-01**: “1.1.1.” con **punto final** → corregir a “1.1.1” (sin punto) y alinear ancla `sec-1-1-1`.  
+- **Caso S-01**: lista con “a) b) c)” → reemplazar por “-” manteniendo **todo** el contenido.  
+- **Caso C-01**: literal parafraseada → reponer **texto literal**; si es extensa, dividir en subpuntos (No-Data-Loss).  
+- **Caso L-01**: árbol desalineado → aplicar monoespaciada y **ARV-Tree-UTF**; si no hay soporte, **ARV-Tree-ASCII**.
+
+99.17.9 [ANCHOR:sec-99-17-check] Check final antes de cerrar
+- Cartela `ruby` y banners **OK**; micro-encabezado **completo y ordenado**.  
+- ISO 2145 **OK**; **sin** `#` al inicio; listas internas con “-”; **doble asterisco** solo para referencias internas o literales clave del Manual.  
+- Anclas por subpunto **OK**; alias si hubo renumeración; **TOC** en **mismo commit**.  
+- Terminología **exacta**; contenido **completo** y literales **tal cual**.  
+- Árboles/tablas **alineados**; publicación/citas **en espejo**; control de cambios en **ARV-PLN-001**.
+
+99.17.10 [ANCHOR:sec-99-17-mono] Tipografía y normalización técnica (obligatoria)
+- Redactar/revisar con **tipografía monoespaciada** (alineación de listas/árboles).  
+- Emitir **UTF-8 sin BOM** y finales de línea **LF**; evitar mezclar CRLF/LF; eliminar NBSP/ZWSP; usar guion ASCII “-”.  
+- Árboles: **ARV-Tree-UTF** (box-drawing) o **ARV-Tree-ASCII** según soporte.
+
+Conclusión de la Sección 99.17
+Con este **anti-desvíos profundizado** se asegura que cada bloque cumpla **forma canónica**, **terminología exacta**, **ISO 2145**, **anclas/TOC estables** y **No-Data-Loss**, eliminando causas recurrentes de retrabajo y rotura de referencias.
+
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 99.17 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 99.18 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 99.18
+Title: Ritmo de trabajo (operativo) y gestión de sesiones
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_23.59 (UTC-3)
+Anchors: sec-99-18-proposito,sec-99-18-alcance,sec-99-18-cadencia,sec-99-18-contexto,sec-99-18-division,sec-99-18-sincronizacion,sec-99-18-frases,sec-99-18-metricas,sec-99-18-mono,sec-99-18-conclusion
+
+SECCIÓN 99.18 – RITMO DE TRABAJO (OPERATIVO) Y GESTIÓN DE SESIONES
+
+99.18.1 [ANCHOR:sec-99-18-proposito] Propósito
+Establecer la **cadencia operativa** por bloques y la **gestión de sesiones** para mantener calidad constante, **No-Data-Loss**, numeración/anclas estables y publicación legible por máquinas.
+
+99.18.2 [ANCHOR:sec-99-18-alcance] Alcance
+Aplica a todas las sesiones de redacción y reescritura del Manual (0..n; 98..; 99..), incluidas **migraciones de chat** y reemisiones parciales o totales de secciones.
+
+99.18.3 [ANCHOR:sec-99-18-cadencia] Cadencia operativa (ritmo por bloque)
+- **Un (1) bloque por mensaje** para foco y trazabilidad.  
+- **Releer** el RAW por URL vigente **antes** de cada bloque.  
+- **Checklist** y **Anti-Desvíos** (99.7) obligatorios **antes del cierre**.  
+- **TOC** (Front Matter) actualizado en el **mismo commit** ante cambios de títulos/numeración.  
+- **Citación visible (RAG)** cuando la materia sea cambiante/externa, publicada en espejo (no dentro del bloque).
+
+99.18.4 [ANCHOR:sec-99-18-contexto] Gestión de contexto y memoria
+- Los bloques deben ser **autocontenidos**: no asumir contexto fuera del propio bloque.  
+- Al detectar límites de contexto, **migrar** a un chat nuevo y **re-sincronizar** (ver frases gatillo 99.18.6).  
+- Mantener **terminología canónica** (nombres exactos de carpetas, columnas, módulos, políticas).
+
+99.18.5 [ANCHOR:sec-99-18-division] División y encadenamiento de bloques
+- Si el contenido crece, **dividir** en subpuntos (X.Y.3, X.Y.4, …) o en bloques consecutivos **sin pérdida** de información (**No-Data-Loss**).  
+- Cuando un fragmento no encaja, **reubicar** en subpunto/anexo en lugar de eliminar.  
+- **Alias de anclas** obligatorios si hay renumeración hasta normalizar referencias.
+
+99.18.6 [ANCHOR:sec-99-18-sincronizacion] Sincronización y control de entorno
+- Confirmación obligatoria al iniciar: **“Manual Maestro cargado y sincronizado; entorno web: [activo/inactivo]”.**  
+- Señal de saturación: **“Charly, estamos en zona de límite: migrá a un chat nuevo y re-sincronizá.”**  
+- Releer el RAW al comienzo de **cada** bloque y antes de publicar.
+
+99.18.7 [ANCHOR:sec-99-18-frases] Frases-gatillo (uso operativo)
+- “Charly, **sincronizá Manual Maestro vX** y confirmá carga completa.”  
+- “Charly, **ejecutá Chequeo de Entorno** y decime si la búsqueda web está activa.”  
+- “Charly, **trabajemos en modo RAG** con estas fuentes y **citá todo lo que uses**.”  
+- “Charly, estamos en **zona de límite**: migrá a un chat nuevo y re-sincronizá.”
+
+99.18.8 [ANCHOR:sec-99-18-metricas] Métricas de ritmo (aceptación operativa)
+- **Uno**: cantidad de bloques por sesión = 1 (±0).  
+- **Cero resúmenes**: verificación **No-Data-Loss** previa al cierre.  
+- **100%** micro-encabezados completos y en orden (99.6/99.12).  
+- **100%** anclas por subpunto y **Conclusión** presentes.  
+- **TOC** actualizado en **mismo commit** cuando aplique.
+
+99.18.9 [ANCHOR:sec-99-18-mono] Tipografía monoespaciada y normalización técnica (obligatoria)
+- Redactar/revisar con **tipografía monoespaciada** para preservar alineación en listas, tablas y **árboles**.  
+- Emitir archivos en **UTF-8 sin BOM** y finales de línea **LF**; eliminar NBSP/ZWSP; usar guion ASCII “-” en lugar de “–/—”.  
+- Árboles: **ARV-Tree-UTF** (box-drawing) o **ARV-Tree-ASCII** si no hay soporte Unicode (ver 99.20/99.21).
+
+99.18.10 [ANCHOR:sec-99-18-conclusion] Conclusión de la Sección 99.18
+Con un **ritmo controlado** (1 bloque por mensaje), sincronización explícita, **No-Data-Loss**, TOC/anclas estables y normalización técnica, cada emisión se mantiene **completa, trazable y legible por máquinas**.
+
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 99.18 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 99.19 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 99.19
+Title: Molde listo para pegar — Sección operativa (X.Y), Sección madre (X.0) y Reservas (X.1/X.2)
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_23.59 (UTC-3)
+Anchors: sec-99-19-proposito,sec-99-19-alcance,sec-99-19-molde-operativa,sec-99-19-molde-madre,sec-99-19-molde-reservas,sec-99-19-uso,sec-99-19-validacion,sec-99-19-notas
+
+SECCIÓN 99.19 – MOLDE LISTO PARA PEGAR — SECCIÓN OPERATIVA (X.Y), SECCIÓN MADRE (X.0) Y RESERVAS (X.1/X.2)
+
+99.19.1 [ANCHOR:sec-99-19-proposito] Propósito
+Proveer **moldes completos, literales y autocontenidos** para emitir bloques TXT en formato canónico, sin depender de plantillas externas. Estos moldes respetan **No-Data-Loss**, numeración **ISO 2145**, **anclas** obligatorias, cartela `ruby`, **tipografía monoespaciada** y cierre con **Conclusión** + banners.
+
+99.19.2 [ANCHOR:sec-99-19-alcance] Alcance
+Aplicable a **todas** las secciones del Manual: operativas (X.Y), madres (X.0) y reservas universales (X.1 / X.2). Debe usarse cuando se crea o reescribe un bloque, o cuando se migra de chat y se requiere consistencia inmediata.
+
+99.19.3 [ANCHOR:sec-99-19-molde-operativa] Molde listo para pegar — **Sección operativa (X.Y)**
+============================== INICIO BLOQUE SECCIÓN X.Y ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: vN
+Section: X.Y
+Title: (título exacto)
+DocCode: ARV-MAN-001
+Timestamp: YYYY-MM-DD_HH.MM (UTC-3)
+Anchors: sec-x-y-proposito,sec-x-y-alcance,sec-x-y-a,sec-x-y-b,...
+
+SECCIÓN X.Y – (TÍTULO EXACTO)
+
+X.Y.1 [ANCHOR:sec-x-y-proposito] Propósito
+(Qué resuelve para el lector/operación; incluir **literales** cuando aporten precisión.)
+
+X.Y.2 [ANCHOR:sec-x-y-alcance] Alcance
+(Artefactos, procesos y equipos a los que aplica; **terminología canónica**.)
+
+X.Y.3 [ANCHOR:sec-x-y-a] (subtítulo)
+(Requisitos, pasos, listas de columnas/subcarpetas, reglas críticas, métricas/controles.)
+
+X.Y.4 [ANCHOR:sec-x-y-b] (subtítulo)
+(Continuación operativa; agregar X.Y.5+ si es necesario, sin perder contenido.)
+
+Conclusión de la Sección X.Y
+(1–2 líneas de cierre operativo.)
+
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN X.Y ===============================
+
+99.19.4 [ANCHOR:sec-99-19-molde-madre] Molde listo para pegar — **Sección madre (X.0)**
+============================== INICIO BLOQUE SECCIÓN X.0 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: vN
+Section: X.0
+Title: (título madre)
+DocCode: ARV-MAN-001
+Timestamp: YYYY-MM-DD_HH.MM (UTC-3)
+Anchors: sec-x-0-proposito,sec-x-0-alcance,sec-x-0-resumen,sec-x-0-lectura
+
+SECCIÓN X.0 – (TÍTULO MADRE)
+
+X.0.1 [ANCHOR:sec-x-0-proposito] Propósito
+(Enmarca objetivos, dependencias y resultados verificables.)
+
+X.0.2 [ANCHOR:sec-x-0-alcance] Alcance
+(Qué cubre la sección X; referencias a artefactos clave.)
+
+X.0.3 [ANCHOR:sec-x-0-resumen] Resumen de contenidos
+(- **X.3**: [título exacto] — 1–2 líneas.  
+- **X.4**: [título exacto] — 1–2 líneas.  
+- …)
+
+X.0.4 [ANCHOR:sec-x-0-lectura] Orientación de lectura
+(Pasos sugeridos para aplicar la sección; mencionar **X.1/X.2** como reservas.)
+
+Conclusión de la Sección X.0
+(1–2 líneas de cierre contextual.)
+
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN X.0 ===============================
+
+99.19.5 [ANCHOR:sec-99-19-molde-reservas] Molde listo para pegar — **Reservas (X.1/X.2)**
+============================== INICIO BLOQUE SECCIÓN X.1 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: vN
+Section: X.1
+Title: Métricas y criterios de aceptación (reservada)
+DocCode: ARV-MAN-001
+Timestamp: YYYY-MM-DD_HH.MM (UTC-3)
+Anchors: sec-x-1-proposito,sec-x-1-alcance,sec-x-1-metricas-forma,sec-x-1-metricas-contenido,sec-x-1-trazabilidad,sec-x-1-publicacion,sec-x-1-calidad,sec-x-1-aceptacion
+
+SECCIÓN X.1 – MÉTRICAS Y CRITERIOS DE ACEPTACIÓN (RESERVADA)
+
+X.1.1 [ANCHOR:sec-x-1-proposito] Propósito
+X.1.2 [ANCHOR:sec-x-1-alcance] Alcance
+X.1.3 [ANCHOR:sec-x-1-metricas-forma] Métricas de forma
+X.1.4 [ANCHOR:sec-x-1-metricas-contenido] Métricas de contenido
+X.1.5 [ANCHOR:sec-x-1-trazabilidad] Trazabilidad y gobierno
+X.1.6 [ANCHOR:sec-x-1-publicacion] Publicación legible por máquina
+X.1.7 [ANCHOR:sec-x-1-calidad] Calidad editorial
+X.1.8 [ANCHOR:sec-x-1-aceptacion] Criterios de aceptación
+
+Conclusión de la Sección X.1
+(1–2 líneas de cierre.)
+
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN X.1 ===============================
+
+============================== INICIO BLOQUE SECCIÓN X.2 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: vN
+Section: X.2
+Title: Riesgos y mitigaciones (reservada)
+DocCode: ARV-MAN-001
+Timestamp: YYYY-MM-DD_HH.MM (UTC-3)
+Anchors: sec-x-2-proposito,sec-x-2-alcance,sec-x-2-riesgos,sec-x-2-controles,sec-x-2-escalamiento
+
+SECCIÓN X.2 – RIESGOS Y MITIGACIONES (RESERVADA)
+
+X.2.1 [ANCHOR:sec-x-2-proposito] Propósito
+X.2.2 [ANCHOR:sec-x-2-alcance] Alcance
+X.2.3 [ANCHOR:sec-x-2-riesgos] Riesgos típicos
+X.2.4 [ANCHOR:sec-x-2-controles] Controles y mitigaciones
+X.2.5 [ANCHOR:sec-x-2-escalamiento] Escalamiento
+
+Conclusión de la Sección X.2
+(1–2 líneas de cierre.)
+
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN X.2 ===============================
+
+99.19.6 [ANCHOR:sec-99-19-uso] Reglas de uso del molde (operativas)
+- **Copiar/pegar** el bloque completo y **sustituir** X.Y / X.0 / X.1 / X.2 por el numeral real.  
+- Completar **Title**, **Anchors** y **Timestamp** en el micro-encabezado (orden exacto).  
+- Redactar con **tipografía monoespaciada**; mantener **No-Data-Loss** (sin contracción).  
+- Insertar **literales** donde aporten precisión; listas para requisitos/pasos/columnas/subcarpetas.  
+- **Prohibido** iniciar líneas con `#`; listas internas con “-”; **permitido** usar **doble asterisco** para resaltar referencias internas o literales clave del Manual.  
+- Actualizar **TOC** (Front Matter) en el **mismo commit** si cambian títulos/numeración; mantener **anclas estables** (alias temporales si renumeran).
+
+99.19.7 [ANCHOR:sec-99-19-validacion] Validación rápida del molde (check mínimo)
+- Banners **INICIO/FIN** presentes; **cartela `ruby`** completa.  
+- **Micro-encabezado** en orden: Version · Section · Title · DocCode · Timestamp (UTC-3) · Anchors.  
+- **SECCIÓN …** con numeral ISO 2145 (**sin** punto final).  
+- **Anclas** en todos los subpuntos; **Conclusión** incluida.  
+- Codificación **UTF-8 sin BOM** y EOL **LF**; sin NBSP/ZWSP ni guiones “–/—”.
+
+99.19.8 [ANCHOR:sec-99-19-notas] Notas
+Este molde **no** sustituye el detalle normativo de 99.6 y 99.12; lo **operativiza**. Para árboles/jerarquías, ver **99.20 (ARV-Tree-UTF)** y **99.21 (ARV-Tree-ASCII)**.
+
+Conclusión de la Sección 99.19
+Con estos moldes literales se emiten bloques **nativos**, consistentes y legibles por máquinas en minutos, preservando **No-Data-Loss**, numeración ISO 2145, anclas estables y tipografía **monoespaciada**.
+
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 99.19 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 99.20 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 99.20
+Title: ARV-Tree-UTF — Árboles con Box Drawing Unicode (monoespaciado)
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-24_23.59 (UTC-3)
+Anchors: sec-99-20-proposito,sec-99-20-alcance,sec-99-20-definicion,sec-99-20-caracteres,sec-99-20-reglas,sec-99-20-indentado,sec-99-20-compatibilidad,sec-99-20-ejemplos,sec-99-20-validacion,sec-99-20-errores,sec-99-20-publicacion,sec-99-20-conclusion
+
+SECCIÓN 99.20 – ARV-TREE-UTF — ÁRBOLES CON BOX DRAWING UNICODE (MONOESPACIADO)
+
+99.20.1 [ANCHOR:sec-99-20-proposito] Propósito
+Estandarizar el **formato de árboles** (carpetas/archivos/jerarquías) usando **Box Drawing Unicode** en tipografía **monoespaciada**, para lograr alineación perfecta, lectura humana rápida y consumo confiable por máquinas.
+
+99.20.2 [ANCHOR:sec-99-20-alcance] Alcance
+Aplica a **todos los árboles** incluidos en el Manual (0..n; 98..; 99..): estructuras de **carpetas**, **módulos**, **campos/columnas** o **tareas**. Cuando el entorno no soporte Unicode, usar el **fallback** de 99.21 (**ARV-Tree-ASCII**).
+
+99.20.3 [ANCHOR:sec-99-20-definicion] Definición (ARV-Tree-UTF)
+- **ARV-Tree-UTF** es la convención de ArVerifica para representar árboles con **Box Drawing Unicode** sobre **tipografía monoespaciada**.  
+- El árbol se **dibuja** con conectores y líneas de Unicode; la **alineación** depende de monoespaciada y de no mezclar caracteres invisibles.  
+- Codificación: **UTF-8 sin BOM**; finales de línea **LF** (ver 99.10/99.12/99.18).
+
+99.20.4 [ANCHOR:sec-99-20-caracteres] Conjunto básico de caracteres
+- **Línea horizontal**: `─` (**U+2500**).  
+- **Línea vertical**: `│` (**U+2502**).  
+- **Rama intermedia**: `├` (**U+251C**) seguida de `─` y **espacio**: `├─ `.  
+- **Rama final**: `└` (**U+2514**) seguida de `─` y **espacio**: `└─ `.  
+- **Vertical de continuidad** (relleno entre niveles): `│  ` (vertical + **dos espacios**).  
+- **Espacio**: **ASCII U+0020** (nunca **NBSP** ni **ZWSP**).
+
+99.20.5 [ANCHOR:sec-99-20-reglas] Reglas de composición (obligatorias)
+- **Monoespaciada**: redactar/verificar en tipografía **monoespaciada**.  
+- **Sin invisibles**: prohibidos **NBSP** y **ZWSP**; solo **espacio ASCII**.  
+- **Guion**: usar **“-” ASCII (U+002D)** solo en nombres; **no** sustituye a `─` del trazado.  
+- **Orden**: listar hijos en orden lógico/canónico (p. ej., prefijos `01_`, `02_`… o alfabético; definir y sostener un único esquema).  
+- **Nombres exactos**: carpetas/archivos con **nomenclatura canónica** (sin sinónimos).  
+- **Profundidad**: hasta donde requiera el caso; si excede legibilidad, dividir el árbol en sub-árboles referenciados.
+
+99.20.6 [ANCHOR:sec-99-20-indentado] Indentado y continuidad (patrón fijo)
+- **Unidad de nivel (UL)** = **3 columnas**.  
+  - Para **nodos intermedios** (con hermanos posteriores): prefijar con `│  ` por cada nivel **abierto**.  
+  - Para **último hijo** de un nivel: no se imprime `│  ` en ese nivel.  
+- Prefijos por nivel (ejemplo):  
+  - Nivel 1 (hijo de raíz): `├─ ` / `└─ ` según corresponda.  
+  - Nivel 2+: repetir `│  ` por cada nivel **abierto** y cerrar con `├─ ` o `└─ `.  
+- **No** usar tabuladores; solo espacios.
+
+99.20.7 [ANCHOR:sec-99-20-compatibilidad] Compatibilidad y fallback
+- Si el entorno **no** renderiza bien Unicode o la fuente monoespaciada, usar **ARV-Tree-ASCII** (99.21) manteniendo la **misma estructura** y orden.  
+- Al publicar espejos (HTML/Markdown), asegurar que el bloque esté dentro de **fenced code** y con una **fuente monoespaciada**.
+
+99.20.8 [ANCHOR:sec-99-20-ejemplos] Ejemplos canónicos
+
+**A) Árbol de carpetas (mínimo):**
+Proyecto_ARV
+├─ 01_Datos
+│  ├─ input
+│  └─ output
+├─ 02_Scripts
+│  └─ utils
+└─ README.md
+
+**B) Árbol con mezcla de archivos y subcarpetas:**
+ARV-Pipeline
+├─ 00_config
+│  ├─ default.yml
+│  └─ secrets.template
+├─ 10_ingesta
+│  ├─ README.txt
+│  └─ loaders
+│     ├─ csv_loader.py
+│     └─ json_loader.py
+├─ 20_transform
+│  └─ rules
+│     └─ normalize.sql
+└─ 90_docs
+   └─ ARV-MAN-001_vN.txt
+
+99.20.9 [ANCHOR:sec-99-20-validacion] Validación del árbol (checklist)
+- Alineación **vertical** perfecta (sin “dientes” ni escalones).  
+- Conectores correctos: `├─ ` en ramas intermedias; `└─ ` en el último hijo.  
+- **Continuidad** con `│  ` en niveles que continúan.  
+- **Monoespaciada** confirmada; sin tabuladores.  
+- Solo **espacios ASCII** (sin NBSP/ZWSP).  
+- Codificación **UTF-8 sin BOM**; finales de línea **LF**.
+
+99.20.10 [ANCHOR:sec-99-20-errores] Errores frecuentes y mitigaciones
+- **Desalineado** por fuente proporcional → cambiar a **monoespaciada**.  
+- **Conectores mezclados** (`|` o `-` ASCII dentro de ARV-Tree-UTF) → reemplazar por `│` y `─`.  
+- **Falta de continuidad** (olvidar `│  `) → reinyectar verticales en niveles abiertos.  
+- **Invisibles** (NBSP/ZWSP) → limpiar y reemplazar por espacio ASCII.  
+- **BOM** o **CRLF** que rompen el pegado → reemitir en **UTF-8 sin BOM** + **LF**.
+
+99.20.11 [ANCHOR:sec-99-20-publicacion] Publicación y mantenimiento
+- Insertar árboles **dentro** del BLOQUE TXT (monoespaciado por ser *fenced code* con `ruby`).  
+- Mantener **No-Data-Loss**: no omitir nodos; si un subárbol crece, moverlo a subpunto/Anexo conservando referencias.  
+- Si se renombra una carpeta/nodo, mantener **anclas/alias** en el texto circundante hasta normalizar todas las referencias.
+
+99.20.12 [ANCHOR:sec-99-20-conclusion] Conclusión de la Sección 99.20
+**ARV-Tree-UTF** fija un estándar visual y técnico para árboles con Unicode: **alineación monoespaciada**, conectores canónicos, ausencia de invisibles y compatibilidad con publicación legible por máquinas; cuando no haya soporte, se usa **ARV-Tree-ASCII** (99.21).
+
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 99.20 ===============================
+
+============================== INICIO BLOQUE SECCIÓN 99.21 ===============================
+=== BLOQUE TXT PARA MANUAL ARVERIFICA ===
+Version: v5.1
+Section: 99.21
+Title: ARV-Tree-ASCII — Árboles en ASCII puro (fallback sin Unicode)
+DocCode: ARV-MAN-001
+Timestamp: 2025-10-25_00.06 (UTC-3)
+Anchors: sec-99-21-proposito,sec-99-21-alcance,sec-99-21-definicion,sec-99-21-caracteres,sec-99-21-reglas,sec-99-21-indentado,sec-99-21-compatibilidad,sec-99-21-ejemplos,sec-99-21-validacion,sec-99-21-errores,sec-99-21-publicacion,sec-99-21-conclusion
+
+SECCIÓN 99.21 – ARV-TREE-ASCII — ÁRBOLES EN ASCII PURO (FALLBACK SIN UNICODE)
+
+99.21.1 [ANCHOR:sec-99-21-proposito] Propósito
+Estandarizar el **formato de árboles** (carpetas/archivos/jerarquías) cuando **no** hay soporte Unicode o fuentes con box-drawing. ARV-Tree-ASCII preserva la **alineación monoespaciada**, la **legibilidad** y el **No-Data-Loss** usando **solo ASCII**.
+
+99.21.2 [ANCHOR:sec-99-21-alcance] Alcance
+Aplica a **todos los árboles** del Manual cuando el entorno rechaza/rompe Unicode (consolas antiguas, parsers o editores restringidos). Si el entorno soporta Unicode, preferir **ARV-Tree-UTF** (ver 99.20).
+
+99.21.3 [ANCHOR:sec-99-21-definicion] Definición (ARV-Tree-ASCII)
+- **ARV-Tree-ASCII** es la convención de ArVerifica para representar árboles usando **caracteres ASCII de 7 bits**.  
+- Se basa en conectores compuestos con `+`, `` ` ``, `-`, `|` y **espacios**; la **alineación** depende de tipografía **monoespaciada** y de evitar caracteres invisibles.  
+- Codificación: **UTF-8 sin BOM** (contenido sigue siendo ASCII) y finales de línea **LF**.
+
+99.21.4 [ANCHOR:sec-99-21-caracteres] Conjunto básico de caracteres (ASCII puro)
+- **Rama intermedia**: `+-- ` (signo más, dos guiones, espacio).  
+- **Rama final**: `` `-- `` (acento grave/backtick, dos guiones, espacio).  
+- **Vertical de continuidad**: `|   ` (barra vertical + **tres espacios**).  
+- **Espacio**: **ASCII U+0020** (nunca NBSP ni ZWSP).  
+- **Guion**: **ASCII “-” (U+002D)** en nombres; **no** usar “–/—”.
+
+99.21.5 [ANCHOR:sec-99-21-reglas] Reglas de composición (obligatorias)
+- **Monoespaciada**: redactar/verificar con fuente **monoespaciada**.  
+- **Sin invisibles**: prohibidos **NBSP/ZWSP**; solo espacio ASCII.  
+- **Orden de nodos**: usar esquema **canónico** y estable (p. ej., prefijos `01_`, `02_` … o alfabético).  
+- **Nombres exactos**: carpetas/archivos con **terminología canónica** (sin sinónimos).  
+- **Sin tabuladores**: usar **espacios** exclusivamente.
+
+99.21.6 [ANCHOR:sec-99-21-indentado] Indentado y continuidad (patrón fijo)
+- **Unidad de nivel (UL) = 4 columnas**.  
+  - Por cada **nivel abierto** por encima del nodo actual, imprimir `|   ` (vertical + tres espacios).  
+  - En el **último hijo** de un nivel, **no** imprimir `|   ` para ese nivel.  
+- Prefijos por nivel:  
+  - Nivel 1: `+-- ` / `` `-- `` según el nodo tenga hermanos posteriores (intermedio) o sea el último (final).  
+  - Nivel ≥2: repetir `|   ` por nivel **abierto**, y cerrar con `+-- ` o `` `-- ``.
+
+99.21.7 [ANCHOR:sec-99-21-compatibilidad] Compatibilidad, equivalencias y fallback
+- Si el entorno **sí** soporta Unicode/box-drawing, usar **ARV-Tree-UTF** (99.20) por claridad visual.  
+- **No** confundir ASCII con **CP437** u otras “extended ASCII” con líneas; CP437 **no es** ASCII estándar (riesgo de render distinto).  
+- Al publicar espejos (HTML/Markdown), asegurar *fenced code* y **fuente monoespaciada**.
+
+99.21.8 [ANCHOR:sec-99-21-ejemplos] Ejemplos canónicos
+
+**A) Árbol de carpetas (mínimo):**
+Proyecto_ARV
++-- 01_Datos
+|   +-- input
+|   `-- output
++-- 02_Scripts
+|   `-- utils
+`-- README.md
+
+**B) Árbol con mezcla de archivos y subcarpetas:**
+ARV-Pipeline
++-- 00_config
+|   +-- default.yml
+|   `-- secrets.template
++-- 10_ingesta
+|   +-- README.txt
+|   `-- loaders
+|       +-- csv_loader.py
+|       `-- json_loader.py
++-- 20_transform
+|   `-- rules
+|       `-- normalize.sql
+`-- 90_docs
+    `-- ARV-MAN-001_vN.txt
+
+99.21.9 [ANCHOR:sec-99-21-validacion] Validación del árbol (checklist)
+- Alineación **vertical** perfecta (sin “dientes”).  
+- Conectores correctos: `+-- ` en ramas intermedias; `` `-- `` en el **último hijo**.  
+- **Continuidad** con `|   ` en niveles que siguen.  
+- **Monoespaciada** confirmada; sin **tabuladores**.  
+- Solo **espacios ASCII** (sin NBSP/ZWSP).  
+- Codificación **UTF-8 sin BOM**; finales de línea **LF**.
+
+99.21.10 [ANCHOR:sec-99-21-errores] Errores frecuentes y mitigaciones
+- **Desalineado** por fuente proporcional → cambiar a **monoespaciada**.  
+- **Saltos de línea CRLF** que “rompen” la vista → normalizar a **LF**.  
+- **Invisibles** (NBSP/ZWSP) tras copiar/pegar → limpiar reemplazando por espacio ASCII.  
+- **Conectores mezclados** (`|-` o `\--`) → reemplazar por `|   ` en continuidad y `+-- / \`--` donde corresponda.  
+- **Backtick omitido** en rama final → corregir a `` `-- `` (garantiza diferenciación visual del último hijo).
+
+99.21.11 [ANCHOR:sec-99-21-publicacion] Publicación y mantenimiento
+- Insertar árboles **dentro** del BLOQUE TXT (fenced code `ruby`, fuente monoespaciada).  
+- Mantener **No-Data-Loss**: no omitir nodos; si un subárbol crece, moverlo a subpunto/Anexo manteniendo referencias.  
+- Si se renombra una carpeta/nodo, mantener **anclas/alias** en el texto circundante hasta normalizar todas las referencias.
+
+Conclusión de la Sección 99.21
+**ARV-Tree-ASCII** garantiza árboles **claros y estables** en entornos sin Unicode: conectores ASCII canónicos, **UL=4**, continuidad con `|   `, normalización a **LF** y eliminación de invisibles; cuando se disponga de Unicode, volver a **ARV-Tree-UTF** (99.20) para mejorar la legibilidad.
+
+=== FIN DEL BLOQUE TXT ===
+=============================== FIN BLOQUE SECCIÓN 99.21 ===============================
+
